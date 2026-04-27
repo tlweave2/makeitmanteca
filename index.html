@@ -2,18 +2,628 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Make It Manteca - Economic Development</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Make It Manteca | City of Manteca Economic Development</title>
+  <link href="_css/global.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("a").on('click', function(event) {
+        if (this.hash && location.pathname === this.pathname && location.hostname === this.hostname) {
+          event.preventDefault();
+          const hash = this.hash;
+          const target = $(hash);
+          if (target.length) {
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 800, function(){
+              window.location.hash = hash;
+            });
+          }
+        }
+      });
+    });
+  </script>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; text-align: center; padding: 100px 20px; background: #f5f5f5; }
-    h1 { font-size: 3em; color: #333; }
-    p { margin: 20px 0; color: #666; }
+    /* ===== MANTECA BRAND OVERRIDES ===== */
+    :root {
+      --manteca-red: #8B1A2B;
+      --manteca-navy: #1B3A5C;
+      --manteca-dark: #1a1a1a;
+      --manteca-gold: #C4922E;
+      --manteca-light: #f5f2ed;
+      --manteca-white: #ffffff;
+    }
+
+    /* Nav / Header */
+    #navWrapper {
+      background: var(--manteca-navy) !important;
+      border-bottom: 3px solid var(--manteca-red);
+    }
+    #navWrapper nav ul li a {
+      color: var(--manteca-white) !important;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+    }
+    #navWrapper nav ul li a:hover {
+      color: var(--manteca-gold) !important;
+      background: rgba(255,255,255,0.08);
+    }
+    #menu {
+      color: var(--manteca-white) !important;
+    }
+
+    /* Hero */
+    #welcome {
+      background: linear-gradient(135deg, var(--manteca-navy) 0%, #0d2136 50%, var(--manteca-dark) 100%);
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 20px;
+      position: relative;
+      overflow: hidden;
+    }
+    #welcome::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: radial-gradient(ellipse at 30% 20%, rgba(139,26,43,0.15) 0%, transparent 60%),
+                  radial-gradient(ellipse at 70% 80%, rgba(27,58,92,0.3) 0%, transparent 50%);
+      z-index: 1;
+    }
+    #welcome #ieg {
+      position: relative;
+      z-index: 2;
+      border: none;
+      text-decoration: none;
+      display: block;
+    }
+    #welcome #ieg img {
+      max-width: 500px;
+      width: 90%;
+      margin-bottom: 20px;
+    }
+    .manteca-logo-text {
+      display: block;
+      font-family: 'Georgia', 'Times New Roman', serif;
+      font-size: 4rem;
+      font-weight: 900;
+      color: var(--manteca-white);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      position: relative;
+      z-index: 2;
+      text-shadow: 0 2px 20px rgba(0,0,0,0.5);
+    }
+    .manteca-logo-text .make {
+      font-size: 1.8rem;
+      display: block;
+      letter-spacing: 6px;
+      font-weight: 400;
+      color: rgba(255,255,255,0.85);
+      margin-bottom: 5px;
+    }
+    .manteca-logo-text .manteca {
+      font-size: 4.5rem;
+      display: block;
+      font-weight: 900;
+      background: linear-gradient(180deg, #fff 0%, #e8d5c0 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .manteca-logo-divider {
+      width: 120px;
+      height: 3px;
+      background: var(--manteca-red);
+      margin: 15px auto;
+      position: relative;
+      z-index: 2;
+    }
+    .manteca-logo-tagline {
+      display: block;
+      font-size: 1rem;
+      letter-spacing: 4px;
+      font-weight: 400;
+      color: rgba(255,255,255,0.7);
+      text-transform: uppercase;
+      position: relative;
+      z-index: 2;
+      margin-top: 10px;
+    }
+
+    /* Hero subtitle area */
+    #firstImage {
+      background: linear-gradient(180deg, var(--manteca-dark) 0%, #111 100%);
+      text-align: center;
+      padding: 60px 20px 70px;
+      border-top: 3px solid var(--manteca-red);
+    }
+    #firstImage h2 {
+      color: var(--manteca-white);
+      font-size: 1.5rem;
+      max-width: 750px;
+      margin: 0 auto 35px;
+      font-weight: 400;
+      line-height: 1.6;
+    }
+    .whiteButton {
+      display: inline-block;
+      background: var(--manteca-red);
+      color: #fff !important;
+      padding: 14px 36px;
+      font-size: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      border-radius: 3px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      border: 2px solid var(--manteca-red);
+      margin: 0 8px;
+    }
+    .whiteButton:hover {
+      background: transparent;
+      color: var(--manteca-red) !important;
+      border-color: var(--manteca-red);
+    }
+
+    /* Get Started */
+    #letsGetStarted {
+      background: var(--manteca-light);
+      padding: 70px 20px;
+      text-align: center;
+    }
+    #letsGetStarted h2.orange {
+      color: var(--manteca-red) !important;
+    }
+    .orangeButton {
+      display: inline-block;
+      background: var(--manteca-navy);
+      color: #fff !important;
+      padding: 14px 36px;
+      font-size: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      border-radius: 3px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      border: 2px solid var(--manteca-navy);
+    }
+    .orangeButton:hover {
+      background: transparent;
+      color: var(--manteca-navy) !important;
+    }
+
+    /* The FEZ Section */
+    #projectElevate {
+      background: linear-gradient(rgba(27,58,92,0.85), rgba(27,58,92,0.9)), url('_img/backgrounds/exterior.jpg') center/cover no-repeat;
+      min-height: 350px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    #projectElevate h2 {
+      color: #fff !important;
+      font-size: 3.5rem;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      text-shadow: 0 2px 15px rgba(0,0,0,0.4);
+    }
+    #projectElevatePanel {
+      background: #fff;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    #projectElevatePanel p {
+      max-width: 800px;
+      margin: 0 auto 30px;
+      font-size: 1.15rem;
+      line-height: 1.8;
+    }
+    .greenButton {
+      display: inline-block;
+      background: var(--manteca-red);
+      color: #fff !important;
+      padding: 14px 36px;
+      font-size: 1rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      border-radius: 3px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      border: 2px solid var(--manteca-red);
+    }
+    .greenButton:hover {
+      background: transparent;
+      color: var(--manteca-red) !important;
+    }
+
+    /* Why Manteca */
+    #why {
+      background: #f9f9f9;
+      padding: 70px 0 50px;
+    }
+    #whyWrapper h2.blue {
+      color: var(--manteca-navy) !important;
+    }
+    #whyWrapper h2.blue::after {
+      background: var(--manteca-red) !important;
+    }
+    #lifestyle h5 {
+      color: var(--manteca-red) !important;
+    }
+    #lifestyle h3 {
+      color: var(--manteca-navy);
+      font-size: 2.8rem;
+      border-top-color: var(--manteca-red) !important;
+    }
+
+    /* Services */
+    #services {
+      background: #fff !important;
+      padding: 70px 20px;
+    }
+    #services h2.green {
+      color: var(--manteca-navy) !important;
+    }
+    #services h2.green::after {
+      background: var(--manteca-red) !important;
+    }
+    #services .col h4 {
+      color: var(--manteca-red);
+    }
+
+    /* Incentives */
+    #incentives {
+      background: var(--manteca-light);
+      padding: 70px 20px;
+    }
+    #incentives h3 {
+      color: var(--manteca-navy);
+      font-size: 2.5rem;
+    }
+    #incentives .col2 h4 {
+      color: var(--manteca-red);
+    }
+    .greenButtonTiny {
+      display: inline-block;
+      background: var(--manteca-navy);
+      color: #fff !important;
+      padding: 8px 20px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-radius: 3px;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      border: 2px solid var(--manteca-navy);
+    }
+    .greenButtonTiny:hover {
+      background: transparent;
+      color: var(--manteca-navy) !important;
+    }
+
+    /* News */
+    #news {
+      background: linear-gradient(rgba(27,58,92,0.92), rgba(27,58,92,0.95)), url('_img/backgrounds/vats.png') center/cover no-repeat;
+      padding: 70px 20px;
+      text-align: center;
+      min-height: 300px;
+    }
+    #news h2.orange {
+      color: #fff !important;
+    }
+    #news p {
+      color: rgba(255,255,255,0.9);
+    }
+    #news a {
+      color: var(--manteca-gold) !important;
+    }
+
+    /* Team */
+    #contact {
+      background: #fff;
+      padding: 70px 20px;
+    }
+    #contact h2.blue {
+      color: var(--manteca-navy) !important;
+    }
+
+    /* Footer */
+    #footer {
+      background: var(--manteca-navy);
+      color: rgba(255,255,255,0.8);
+      padding: 50px 20px 30px;
+      text-align: center;
+    }
+    #footer a {
+      color: var(--manteca-gold) !important;
+    }
+    #footer h4 {
+      color: #fff;
+      font-size: 1.3rem;
+      margin-bottom: 15px;
+    }
+    #footer .footer-contact {
+      margin-bottom: 20px;
+      line-height: 1.8;
+    }
+    #footer .footer-copy {
+      border-top: 1px solid rgba(255,255,255,0.15);
+      padding-top: 20px;
+      font-size: 0.85rem;
+      margin-top: 20px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .manteca-logo-text { font-size: 2.5rem; }
+      .manteca-logo-text .manteca { font-size: 3rem; }
+      .manteca-logo-text .make { font-size: 1.2rem; }
+      #projectElevate h2 { font-size: 2.2rem; }
+      #firstImage h2 { font-size: 1.2rem; }
+      .whiteButton, .orangeButton, .greenButton {
+        display: block;
+        margin: 10px auto;
+        max-width: 280px;
+      }
+    }
   </style>
 </head>
-<body>
-  <h1>Make It Manteca</h1>
-  <p>City of Manteca — Economic Development</p>
-  <p><em>Website coming soon.</em></p>
+<body id="top">
+  <!-- NAVIGATION -->
+  <header id="navWrapper">
+    <div id="menu">☰</div>
+    <nav aria-label="main menu" id="nav" class="js">
+      <ul>
+        <li><a href="#theFEZ" title="The FEZ">The FEZ</a></li>
+        <li><a href="#why" title="Why Manteca">Why Manteca</a></li>
+        <li><a href="#services" title="Services">Services</a></li>
+        <li><a href="#incentives" title="Incentives">Incentives</a></li>
+        <li><a href="#news" title="News">News</a></li>
+        <li><a href="#contact" title="Contact">Contact</a></li>
+      </ul>
+    </nav>
+    <script>
+      $("#nav").addClass("js").before('<div id="menu">&#9776;</div>');
+      $("#menu").click(function(){ $("#nav").toggle(); });
+      $(window).resize(function(){
+        if(window.innerWidth > 768) { $("#nav").removeAttr("style"); }
+      });
+    </script>
+    <div class="floatBreaker"></div>
+  </header>
+
+  <!-- HERO -->
+  <main id="welcome">
+    <a href="#top" id="ieg">
+      <span class="manteca-logo-text">
+        <span class="make">Make It</span>
+        <span class="manteca">MANTECA</span>
+      </span>
+      <span class="manteca-logo-divider"></span>
+      <span class="manteca-logo-tagline">City of Manteca &bull; Economic Development</span>
+    </a>
+  </main>
+  <div id="firstImage">
+    <h2>We're here to assist with your business start-up, expansion, and relocation needs.</h2>
+    <a href="mailto:econdev@manteca.gov" class="whiteButton">Connect With Us</a>
+    <a href="#letsGetStarted" class="whiteButton" style="background:transparent;border-color:#fff;">Learn More</a>
+  </div>
+
+  <!-- GET STARTED -->
+  <section id="letsGetStarted">
+    <h2 class="orange">Let's Get Started</h2>
+    <p>Our dedicated staff of economic development professionals is committed to providing you customized business assistance — at no cost. Whether you're launching a startup, expanding operations, or relocating to Northern California's fastest-growing region, we're your partner every step of the way.</p>
+    <p class="center"><a href="mailto:econdev@manteca.gov" class="orangeButton">Schedule a Consultation</a></p>
+  </section>
+
+  <!-- THE FEZ — Family Entertainment Zone -->
+  <div id="theFEZ"><h2>The FEZ</h2></div>
+  <section id="projectElevatePanel">
+    <p>The <strong>Family Entertainment Zone (FEZ)</strong> is a 150+ acre master-planned destination district at the heart of Manteca. Designed as the premier entertainment and lifestyle hub of the Northern San Joaquin Valley, The FEZ will feature world-class sports complexes, dining, retail, hospitality, and family attractions — all strategically positioned at the crossroads of Highway 99 and the Highway 120 Bypass.</p>
+    <p>With over <strong>11,000 new homes approved and in development</strong>, a growing population of 94,000+, and immediate freeway visibility to 150,000+ vehicles per day, The FEZ represents one of the most significant shovel-ready development opportunities in California's Central Valley.</p>
+    <p class="center"><a href="mailto:econdev@manteca.gov" class="greenButton">Learn More About The FEZ</a></p>
+  </section>
+
+  <!-- WHY MANTECA -->
+  <div id="why">
+    <div id="whyWrapper">
+      <h2 class="blue">Why Manteca</h2>
+      <p>Strategically located at the crossroads of California's major trade corridors, Manteca offers businesses unmatched access, a skilled workforce, and a city government that moves at the speed of business.</p>
+
+      <!-- Business Infographics -->
+      <section id="lifestyle">
+        <h3>Business</h3>
+        <div class="lifestyleContainer">
+          <img src="_img/infographics/growing.png" alt="" aria-hidden="true">
+          <div><h5>Growing.</h5><h6>One of California's Fastest-Growing Cities</h6><p>Population of 94,000+ with over 11,000 new homes approved. The Northern San Joaquin Valley's economic engine, projected to reach 120,000 residents within the decade.</p></div>
+        </div>
+        <div class="lifestyleContainer">
+          <img src="_img/infographics/connected.png" alt="" aria-hidden="true">
+          <div><h5>Connected.</h5><h6>At the Crossroads of California</h6><p>Immediate access to Highway 99, I-5, and Highway 120 Bypass. 150,000+ daily vehicles. Four international airports within 75 miles and direct BNSF/UP rail access.</p></div>
+        </div>
+        <div class="lifestyleContainer">
+          <img src="_img/infographics/fast.png" alt="" aria-hidden="true">
+          <div><h5>Fast.</h5><h6>Streamlined Permitting & Approvals</h6><p>Concierge-level development services with fast-tracked plan review, dedicated project managers, and a City Council committed to eliminating red tape.</p></div>
+        </div>
+        <div class="lifestyleContainer">
+          <img src="_img/infographics/talented.png" alt="" aria-hidden="true">
+          <div><h5>Talented.</h5><h6>830,000+ Regional Workforce</h6><p>Access to a deep labor pool across the Northern San Joaquin Valley. Partnerships with San Joaquin Delta College, Stanislaus State, and UC Merced for workforce training pipelines.</p></div>
+        </div>
+        <div class="lifestyleContainer">
+          <img src="_img/infographics/affordable.png" alt="" aria-hidden="true">
+          <div><h5>Affordable.</h5><h6>Lower Operating Costs</h6><p>Significant savings on real estate, labor, and utilities compared to Bay Area and Sacramento markets. Competitive incentive programs to reduce startup and expansion costs.</p></div>
+        </div>
+
+        <h3>Lifestyle</h3>
+        <div class="lifestyleContainer">
+          <img src="_img/infographics/active.png" alt="">
+          <div><h5>Active.</h5><h6>Year-Round Recreation</h6><p>Big League Dreams sports complex, 50+ parks, 18-hole championship golf course, and the nearby Sierra Nevada mountains and Delta waterways for outdoor adventure.</p></div>
+        </div>
+        <div class="lifestyleContainer">
+          <img src="_img/infographics/prosperous.png" alt="" aria-hidden="true">
+          <div><h5>Prosperous.</h5><h6>A Thriving Consumer Base</h6><p>Median household income above the national average with strong homeownership rates. A growing middle class driving retail, dining, and entertainment demand.</p></div>
+        </div>
+        <div class="lifestyleContainer">
+          <img src="_img/infographics/diverse.png" alt="" aria-hidden="true">
+          <div><h5>Diverse.</h5><h6>Rich Cultural Fabric</h6><p>A vibrant, multi-cultural community that brings together families from across California and beyond — creating a dynamic workforce and consumer market.</p></div>
+        </div>
+        <div class="lifestyleContainer">
+          <img src="_img/infographics/close.png" alt="" aria-hidden="true">
+          <div><h5>Close.</h5><h6>Minutes from Everywhere</h6><p>75 miles to Silicon Valley, 60 miles to the Bay Area, 45 miles to Stockton Port (deep-water access), and 12 miles to Modesto. Central to everything that matters.</p></div>
+        </div>
+        <div class="lifestyleContainer">
+          <img src="_img/infographics/ready.png" alt="" aria-hidden="true">
+          <div><h5>Ready.</h5><h6>A Business-Friendly Partner</h6><p>A City Council and Economic Development team that actively invests in your success. Enterprise Zone benefits, responsive government, and a community that welcomes growth.</p></div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div id="servicesWrapper">
+      <h2 class="green">Our Services</h2>
+      <div class="col">
+        <h4>Tailored Solutions</h4>
+        <p>Free, customized business assistance from our Economic Development team — from initial concept to grand opening, we provide white-glove service at no cost to you.</p>
+      </div>
+      <div class="col">
+        <h4>Site Selection</h4>
+        <p>Comprehensive market analysis, available property databases, demographic profiles, traffic studies, and guided site tours to help you find the perfect location.</p>
+      </div>
+      <div class="col">
+        <h4>Workforce & Talent</h4>
+        <p>Customized labor market reports, hiring plan assistance, connections to local workforce development boards, and partnerships with regional colleges and trade schools.</p>
+      </div>
+      <div class="col">
+        <h4>Fast-Tracked Approvals</h4>
+        <p>Streamlined plan review, dedicated permit concierge, and a City Hall culture that prioritizes your timeline. We measure our plan review turnaround in days, not months.</p>
+      </div>
+      <div class="col">
+        <h4>Small Business Support</h4>
+        <p>Free business planning resources, permit assistance programs, façade improvement grants, and one-on-one counseling to help small businesses thrive in Manteca.</p>
+      </div>
+      <div class="col">
+        <h4>Startup Incentives</h4>
+        <p>Competitive incentive packages including impact fee deferrals, tax rebate zones, and specialized programs for breweries, restaurants, wineries, and retail.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- INCENTIVES -->
+  <section id="incentives">
+    <h3>Incentive Programs</h3>
+    <div id="servicesWrapper">
+      <div class="col2">
+        <h4>Breweries, Restaurants & Wineries (BReW)</h4>
+        <p>Incentive program designed to attract craft breweries, destination restaurants, and boutique wineries to Manteca's growing culinary scene.</p>
+        <p><a href="pdfs/brew-guidelines.pdf" class="greenButtonTiny" target="_blank">Guidelines (PDF)</a></p>
+      </div>
+      <div class="col2">
+        <h4>Fa&ccedil;ade Improvement (FIXD)</h4>
+        <p>Matching grant program to help commercial property owners and tenants enhance building exteriors, signage, and curb appeal.</p>
+        <p><a href="pdfs/fixd-guidelines.pdf" class="greenButtonTiny" target="_blank">Guidelines (PDF)</a></p>
+      </div>
+      <div class="col2">
+        <h4>Development Impact Fee Deferral</h4>
+        <p>Deferred payment options on development impact fees to improve project cash flow and reduce upfront capital requirements for qualifying projects.</p>
+        <p><a href="pdfs/impact-fee-deferral-guidelines.pdf" class="greenButtonTiny" target="_blank">Guidelines (PDF)</a></p>
+      </div>
+      <div class="col2">
+        <h4>Small Business Permit Assistance (PASS)</h4>
+        <p>Streamlined permitting assistance and fee reduction program for small businesses navigating City Hall requirements.</p>
+        <p><a href="pdfs/small-business-permit-assistance-program-guidelines-policies-procedures.pdf" class="greenButtonTiny" target="_blank">Guidelines (PDF)</a></p>
+      </div>
+      <div class="col2">
+        <h4>Startup Manteca Incentive Program</h4>
+        <p>Competitive incentives for qualifying startups including fee waivers, expedited permitting, and connections to local investment networks.</p>
+        <p><a href="pdfs/startup-elk-grove-program-guidelines.pdf" class="greenButtonTiny" target="_blank">Guidelines (PDF)</a></p>
+      </div>
+      <div class="col2">
+        <h4>State & Federal Incentives</h4>
+        <p>Navigate California Competes tax credits, federal Opportunity Zone benefits, New Market Tax Credits, and CDBG funding with our expert guidance.</p>
+        <p><a href="mailto:econdev@manteca.gov" class="greenButtonTiny">Contact Us</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWS -->
+  <section id="news">
+    <h2 class="orange">Stay Connected</h2>
+    <p>Sign up for the Make It Manteca Business newsletter for the latest development news, incentive program updates, and economic development opportunities.</p>
+    <p><a href="mailto:econdev@manteca.gov?subject=Newsletter%20Signup" class="whiteButton" style="margin-top:15px;">Subscribe to Newsletter</a></p>
+  </section>
+
+  <!-- WHO WE ARE -->
+  <section id="contact">
+    <div id="whoweare">
+      <h2 class="blue">Who We Are</h2>
+      <p class="intro">The City of Manteca Office of Economic Development is your single point of contact for business assistance, site selection, permitting, and incentive navigation.</p>
+      <div id="econDev">
+        <div class="col">
+          <img src="_img/team/darrell-doan-2022.jpg" alt="Economic Development Director" style="width:100%;border-radius:50%;max-width:180px;">
+          <p class="name"><strong>Economic Development Director</strong></p>
+          <p><a href="tel:2094568520">(209) 456-8520</a><br><a href="mailto:econdev@manteca.gov">econdev@manteca.gov</a></p>
+        </div>
+        <div class="col">
+          <img src="_img/team/sara-rodrigues.jpg" alt="Economic Development Analyst" style="width:100%;border-radius:50%;max-width:180px;">
+          <p class="name"><strong>Economic Development Analyst</strong></p>
+          <p><a href="tel:2094568520">(209) 456-8520</a><br><a href="mailto:econdev@manteca.gov">econdev@manteca.gov</a></p>
+        </div>
+        <div class="col">
+          <img src="_img/team/mel-lasher.jpg" alt="Economic Development Analyst" style="width:100%;border-radius:50%;max-width:180px;">
+          <p class="name"><strong>Economic Development Analyst</strong></p>
+          <p><a href="tel:2094568520">(209) 456-8520</a><br><a href="mailto:econdev@manteca.gov">econdev@manteca.gov</a></p>
+        </div>
+      </div>
+
+      <h2 class="blue" style="margin-top:60px;">City Leadership</h2>
+      <div id="council" style="text-align:center;margin-top:30px;">
+        <div class="col">
+          <img src="_img/team/rod-brewer.jpg" alt="Mayor" style="width:100%;border-radius:10px;max-width:160px;">
+          <p><strong>Mayor</strong><br>City of Manteca</p>
+        </div>
+        <div class="col">
+          <img src="_img/team/sergio-robles.jpg" alt="Mayor Pro Tem" style="width:100%;border-radius:10px;max-width:160px;">
+          <p><strong>Mayor Pro Tem</strong><br>City of Manteca</p>
+        </div>
+        <div class="col">
+          <img src="_img/team/darren-suen.jpg" alt="Councilmember" style="width:100%;border-radius:10px;max-width:160px;">
+          <p><strong>Councilmember</strong><br>City of Manteca</p>
+        </div>
+        <div class="col">
+          <img src="_img/team/jason-behrmann.jpg" alt="City Manager" style="width:100%;border-radius:10px;max-width:160px;">
+          <p><strong>City Manager</strong><br>City of Manteca</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="manteca-logo-text" style="font-size:1.8rem;margin-bottom:25px;">
+      <span class="make" style="font-size:0.9rem;">Make It</span>
+      <span class="manteca" style="font-size:2.2rem;">MANTECA</span>
+    </div>
+    <div class="footer-contact">
+      1001 W. Center Street &bull; Manteca, CA 95337<br>
+      <a href="tel:2094568520">(209) 456-8520</a> &bull; <a href="mailto:econdev@manteca.gov">econdev@manteca.gov</a><br>
+      <a href="https://www.manteca.gov" target="_blank">www.manteca.gov</a>
+    </div>
+    <div class="footer-copy">
+      &copy; 2026 City of Manteca. All rights reserved. &bull; Make It Manteca
+    </div>
+  </footer>
 </body>
 </html>
