@@ -1,0 +1,18 @@
+{
+  "id": "isadeburgh-portfolio",
+  "version": "v2",
+  "source": "inspiration_awwwards",
+  "title": "Isa de Burgh – CPG Brand Architect Portfolio",
+  "category": "inspiration_awwwards",
+  "url": "https://isadeburgh.com",
+  "screenshot": "designs/inspiration_awwwards/isadeburgh-portfolio.jpg",
+  "description": "Isa de Burgh's portfolio site is a refined, editorial-style personal website for a CPG brand architect and creative director. The design uses a sophisticated serif typography system with generous whitespace and a restrained color palette of black, white, and warm beige. The hero features a centered, elegant layout with the name in a refined serif font above a brief one-line description. Work samples are presented as a full-bleed image grid with titles overlaid on hover. Each project page uses the same editorial approach — large photography, minimal text, and careful typographic hierarchy. The navigation is a thin, unobtrusive top bar. The design draws heavily from print editorial — magazine-style layouts, pull quotes, and carefully considered image-text ratios. There are no heavy animations or flashy elements; the design relies on quality of content and typographic craftsmanship. The site feels personal, premium, and uncompromising in its design standards. A 'Contact' link opens a simple email prompt. The portfolio demonstrates that for creative professionals, the website itself must be the best portfolio piece.",
+  "usage_tags": ["serif", "editorial", "minimal", "premium", "portfolio", "typography_driven", "clean", "photography_focused"],
+  "primary_use_case": "Perfect reference for creative directors, brand strategists, and designers needing a refined editorial portfolio that lets work photography and typography lead.",
+  "layout": { "type": "single_page_with_gallery", "sections": ["hero_name", "project_grid", "project_detail", "about", "contact"] },
+  "colors": { "primary": "#000000", "accent": "#B8A88A", "background": "#FFFFFF", "text_primary": "#000000", "text_secondary": "#6B5B4F" },
+  "typography": { "heading_font": "Playfair Display", "body_font": "Inter", "heading_weights": [400, 500, 600], "body_weight": 300 },
+  "components": ["centered_hero", "image_portfolio_grid", "project_detail_layouts", "pull_quotes", "thin_navigation", "email_contact"],
+  "style_vibe": "Refined editorial minimalism with premium serif typography, generous whitespace, and photography-led portfolio presentation.",
+  "industry": ["branding", "creative_direction", "portfolio", "design", "cpg"]
+}

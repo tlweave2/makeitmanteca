@@ -1,0 +1,33 @@
+{
+  "id": "bar-event-landing-page",
+  "version": "v2",
+  "source": "figma_community",
+  "title": "Bar & Event Website Landing Page",
+  "category": "landing_pages",
+  "url": "https://www.figma.com/community/file/1471489878904157100/bar-event-website-landing-page",
+  "screenshot": "designs/landing_pages/bar-event-landing-page.jpg",
+  "description": "A modern, energetic bar and event venue landing page designed for establishments that host private parties, live music, and special events. The design focuses on creating excitement and driving bookings, with a bold, vibrant aesthetic that captures the energy of a night out. The hero section features large, impactful imagery with event-themed messaging and a prominent 'Book Now' or 'Reserve Table' CTA. Below the fold, an event packages section presents tiered offerings (birthday parties, corporate events, private dinners) in visually distinct cards with pricing and capacity info. A live music or DJ lineup section uses cards with artist photos, dates, and genres. The gallery section showcases the venue's interior and past events through a dynamic grid. Amenities are listed with custom icons — VIP areas, sound system, lighting, capacity, catering options. The contact section includes a booking inquiry form with event type, guest count, date range, and special requests fields. Design features a dark base with vibrant accent colors (hot pink, electric blue, neon green) that evoke nightlife energy. Typography uses bold sans-serif headings with high contrast against dark backgrounds. Custom iconography for amenities adds visual interest. The layout is single-page with smooth anchor scrolling to each section.",
+  "usage_tags": ["vibrant", "bold", "event_focused", "conversion_focused", "dark_mode", "nightlife", "booking_oriented"],
+  "primary_use_case": "Best for bars, nightclubs, and event venues that need a booking-focused landing page showcasing event packages, live entertainment, and venue amenities.",
+  "layout": {
+    "type": "single_page_scroll",
+    "sections": ["hero_cta", "event_packages", "lineup", "gallery", "amenities", "booking_form", "contact"]
+  },
+  "colors": {
+    "primary": "#0A0A1A",
+    "accent": "#FF006E",
+    "secondary_accent": "#00F5D4",
+    "background": "#050510",
+    "text_primary": "#FFFFFF",
+    "text_secondary": "#B0B0C0"
+  },
+  "typography": {
+    "heading_font": "Poppins",
+    "body_font": "Inter",
+    "heading_weights": [600, 700, 800],
+    "body_weight": 400
+  },
+  "components": ["hero_section", "event_cards", "artist_cards", "gallery_grid", "amenity_icons", "booking_form", "contact_info", "social_links"],
+  "style_vibe": "Energetic nightlife dark theme with neon accents, vibrant photography, and conversion-driven event booking layout.",
+  "industry": ["nightlife", "events", "hospitality", "entertainment", "venue"]
+}

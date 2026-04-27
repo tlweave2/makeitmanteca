@@ -1,0 +1,18 @@
+{
+  "id": "shuttle-rs",
+  "version": "v2",
+  "source": "inspiration_awwwards",
+  "title": "Shuttle – Rust Cloud Platform",
+  "category": "inspiration_awwwards",
+  "url": "https://shuttle.rs",
+  "screenshot": "designs/inspiration_awwwards/shuttle-rs.jpg",
+  "description": "Shuttle is a Rust-focused deployment platform with a bold, tech-forward dark theme. Uses a vibrant red and purple gradient hero with code snippet integration that immediately appeals to Rust developers. Playful developer-friendly copywriting with Rust-community inside jokes. Feature sections with terminal-style UI elements showing CLI commands and deployment output. Community-focused design with contributor stats and GitHub star counts prominently displayed. The color palette of purple and red against dark backgrounds creates an intense, passionate feel matching the Rust community aesthetic. Clean code snippets in the feature sections demonstrate the product's simplicity.",
+  "usage_tags": ["developer_focused", "dark_mode", "bold", "modern", "community_focused", "code_heavy"],
+  "primary_use_case": "Live design inspiration for developer tools and programming-language-specific platforms needing a community-focused, code-heavy landing page.",
+  "layout": { "type": "single_page_scroll", "sections": ["hero_code", "features", "integrations", "pricing", "community"] },
+  "colors": { "primary": "#7C3AED", "accent": "#EF4444", "background": "#0A0A0F", "text_primary": "#FFFFFF", "text_secondary": "#8B8FA3" },
+  "typography": { "heading_font": "Inter", "body_font": "Inter", "heading_weights": [500, 600, 700], "body_weight": 400 },
+  "components": ["navigation", "hero_section", "code_snippets", "feature_cards", "community_stats", "pricing_cards", "footer"],
+  "style_vibe": "Bold, Rust-community-themed dark aesthetic with red-purple gradients, terminal-style elements, and code-heavy product demonstrations.",
+  "industry": ["developer_tools", "cloud", "rust", "saas"]
+}

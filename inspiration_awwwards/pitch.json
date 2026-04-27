@@ -1,0 +1,18 @@
+{
+  "id": "pitch",
+  "version": "v2",
+  "source": "inspiration_awwwards",
+  "title": "Pitch – Presentation Software",
+  "category": "inspiration_awwwards",
+  "url": "https://pitch.com",
+  "screenshot": "designs/inspiration_awwwards/pitch.jpg",
+  "description": "Pitch is a clean, professional presentation software page with a distinctive coral-orange brand color that creates immediate visual recognition. The hero section shows a presenter using the product in a real-world context. Feature sections use staggered card layouts with device mockups showing the product interface. Navigation is minimal with a prominent CTA button. Clean sans-serif typography throughout. The page uses subtle scroll animations — cards fade and slide upward as they enter view. The color palette combines deep navy with the signature coral accent for CTAs and highlights.",
+  "usage_tags": ["clean", "professional", "modern", "b2b_friendly", "minimal", "product_focused"],
+  "primary_use_case": "Live design inspiration for B2B SaaS products needing a clean, professional page that showcases product screenshots with prominent feature highlights.",
+  "layout": { "type": "single_page_scroll", "sections": ["hero_mockup", "features_staggered", "templates", "testimonials", "pricing"] },
+  "colors": { "primary": "#0F172A", "accent": "#FF6154", "background": "#FFFFFF", "text_primary": "#0F172A", "text_secondary": "#64748B" },
+  "typography": { "heading_font": "Inter", "body_font": "Inter", "heading_weights": [500, 600, 700], "body_weight": 400 },
+  "components": ["navigation", "hero_section", "feature_cards", "device_mockups", "template_grid", "testimonial_cards", "pricing_tables", "footer"],
+  "style_vibe": "Clean and professional B2B SaaS with a signature coral accent and staggered feature layouts with device mockups.",
+  "industry": ["saas", "presentations", "collaboration", "b2b"]
+}

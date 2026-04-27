@@ -1,0 +1,18 @@
+{
+  "id": "desktop-fm",
+  "version": "v2",
+  "source": "inspiration_awwwards",
+  "title": "Desktop.fm – Music for Work",
+  "category": "inspiration_awwwards",
+  "url": "https://desktop.fm",
+  "screenshot": "designs/inspiration_awwwards/desktop-fm.jpg",
+  "description": "Desktop.fm is a creative, vibrant music platform page with a bold dark theme and neon accent colors. Hero features an animated music visualizer or album art that immediately communicates the product's creative energy. Playful gradient buttons and card layouts break away from traditional SaaS conventions. Custom typography and a distinctive brand voice create a unique personality. The color palette uses deep navy backgrounds with hot pink and cyan accents for high energy. The page feels more like a music app than a traditional marketing page.",
+  "usage_tags": ["creative", "dark_mode", "colorful", "animated", "consumer_friendly", "vibrant"],
+  "primary_use_case": "Live design inspiration for creative platforms, music apps, and consumer products that want an energetic, non-traditional dark theme.",
+  "layout": { "type": "single_page_scroll", "sections": ["hero_player", "feature_grid", "premium_plans", "testimonials", "download"] },
+  "colors": { "primary": "#1A1A2E", "accent": "#E94560", "background": "#0F0F1A", "text_primary": "#FFFFFF", "text_secondary": "#A0A0B0" },
+  "typography": { "heading_font": "Inter", "body_font": "Inter", "heading_weights": [500, 600, 700], "body_weight": 400 },
+  "components": ["hero_section", "feature_cards", "pricing_cards", "testimonial_blocks", "download_buttons", "footer"],
+  "style_vibe": "Creative and energetic dark theme with neon accents and a music-app-inspired visual language.",
+  "industry": ["music", "productivity", "consumer_app", "entertainment"]
+}

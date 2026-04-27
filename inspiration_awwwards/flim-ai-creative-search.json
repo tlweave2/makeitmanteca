@@ -1,0 +1,18 @@
+{
+  "id": "flim-ai-creative-search",
+  "version": "v2",
+  "source": "inspiration_awwwards",
+  "title": "Flim – AI Search Engine for Creatives",
+  "category": "inspiration_awwwards",
+  "url": "https://flim.ai",
+  "screenshot": "designs/inspiration_awwwards/flim-ai-creative-search.jpg",
+  "description": "Flim is a visually stunning AI search engine landing page designed for creative professionals — directors, designers, agencies, and art directors. The design is an immersive, typography-driven experience with a bold dark theme. The hero features a split-letter animation where 'Flim' is spelled out character by character with a drifting scroll effect. Below, a massive search bar dominates the viewport with a ⌘/ hint, immediately communicating the core product interaction. A 'Trusted by the brands shaping culture' section shows an impressive logo bar featuring Anomaly, BETC, Droga5, Wieden+Kennedy, Publicis, Ogilvy, Havas, Accenture, Jacquemus, and others. The page shifts between sections with full-screen image grids of film stills and creative references, demonstrating the product's core value. An AI tools section highlights Generate & Edit and collaborative moodboarding features. The bottom features a newsletter signup and comprehensive footer. The typography is expressive with dramatic weight and size variations. The color palette is dark charcoal with white text, letting the creative imagery and film stills provide all the color. The page feels more like an art installation than a traditional SaaS landing page, with scrolling acting as narrative progression through the creative process.",
+  "usage_tags": ["immersive", "typography_driven", "dark_mode", "creative_focused", "animated", "cinematic", "premium"],
+  "primary_use_case": "Superb reference for AI creative tools, image search platforms, and products targeting creative professionals who value aesthetics as much as functionality.",
+  "layout": { "type": "single_page_scroll", "sections": ["hero_animated_typography", "search_bar", "brand_logos", "image_showcase", "ai_tools", "moodboards", "newsletter", "footer"] },
+  "colors": { "primary": "#1A1A1A", "accent": "#FFFFFF", "background": "#0A0A0A", "text_primary": "#FFFFFF", "text_secondary": "#888888" },
+  "typography": { "heading_font": "Inter", "body_font": "Inter", "heading_weights": [400, 500, 700, 800], "body_weight": 300 },
+  "components": ["animated_letter_scroll", "search_bar", "logo_marquee", "full_screen_image_grids", "ai_feature_cards", "moodboard_showcase", "newsletter_signup", "footer"],
+  "style_vibe": "Cinematic, typography-driven dark theme with animated letter reveals, full-bleed imagery, and an art-installation feel for creative professionals.",
+  "industry": ["ai", "creative_tools", "search", "media", "advertising"]
+}

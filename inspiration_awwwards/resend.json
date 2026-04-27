@@ -1,0 +1,32 @@
+{
+  "id": "resend",
+  "version": "v2",
+  "source": "inspiration_awwwards",
+  "title": "Resend – Email API for Developers",
+  "category": "inspiration_awwwards",
+  "url": "https://resend.com",
+  "screenshot": "designs/inspiration_awwwards/resend.jpg",
+  "description": "Resend's live website is a beautifully crafted dark-themed landing page for an email API platform. The design uses a deep charcoal background with vibrant pink and purple gradient accents that create an energetic, modern feel. The hero section features a massive bold headline with gradient text effect, a concise subheading, and a clean CTA button with a secondary ghost button. A live code snippet appears below the fold, showing real API usage — a smart trust-building element for developer audiences. The page employs subtle micro-animations: geometric shapes drift slowly in the background, buttons have smooth hover transitions, and cards lift on interaction. Feature sections use a clean 3-column card grid, each card containing an icon, title, and description with consistent spacing. Stats counters (emails sent, companies trusted) appear with animated number transitions. Customer logos appear in a continuous scrolling marquee. The navigation is a clean top bar with dropdown menus that use glassmorphism effects. The color palette combines deep slate with vibrant magenta and purple accents. Typography uses Inter throughout with extreme weight contrasts — ultralight body text against bold 800-weight headlines.",
+  "usage_tags": ["dark_mode", "developer_focused", "gradient_heavy", "modern", "animated", "trust_building", "conversion_focused"],
+  "primary_use_case": "Ideal for API-first products and developer tools needing a landing page that balances technical credibility with modern, energetic visual design.",
+  "layout": {
+    "type": "single_page_scroll",
+    "sections": ["hero_gradient", "code_snippet", "feature_grid", "stats_counters", "customer_logos", "testimonials", "cta"]
+  },
+  "colors": {
+    "primary": "#7C3AED",
+    "accent": "#FF4785",
+    "background": "#0B0C10",
+    "text_primary": "#FFFFFF",
+    "text_secondary": "#8B8FA3"
+  },
+  "typography": {
+    "heading_font": "Inter",
+    "body_font": "Inter",
+    "heading_weights": [600, 700, 800],
+    "body_weight": 300
+  },
+  "components": ["glassmorphism_nav", "hero_section", "code_block", "feature_cards", "stat_counters", "logo_marquee", "testimonial_pull_quotes", "cta_section"],
+  "style_vibe": "Dark, vibrant, and developer-centric — a modern API product aesthetic that combines code credibility with energetic gradient design.",
+  "industry": ["saas", "developer_tools", "email", "api", "technology"]
+}

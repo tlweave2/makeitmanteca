@@ -1,0 +1,32 @@
+{
+  "id": "brainwave-io-saas-landing",
+  "version": "v2",
+  "source": "figma_community",
+  "title": "Brainwave.io - Landing Page UI Kit - SaaS Landing Page - Creative App Landing Page",
+  "category": "saas_websites",
+  "url": "https://www.figma.com/community/file/1330188068589982408/brainwave-io-landing-page-ui-kit-saas-landing-page-creative-app-landing-page",
+  "screenshot": "designs/saas_websites/brainwave-io-saas-landing.jpg",
+  "description": "Brainwave.io is a comprehensive SaaS landing page UI kit built on a 12-column responsive grid system at 1920px. The kit delivers a complete set of landing page components designed for software-as-a-service products, mobile apps, and creative digital products. The layout emphasizes clear visual hierarchy with a hero section featuring bold headline typography, supporting subtext, and prominent call-to-action buttons. Feature sections are laid out in a clean card-based grid showcasing app capabilities with iconography and descriptive text. The pricing section uses a tiered comparison table, and the design includes testimonial carousels, integration showcases, app store badge placements, and footer navigation. The UI kit employs a modern, minimalist aesthetic with generous whitespace, soft shadows, and rounded corners. Color palette is built around a primary brand accent against neutral backgrounds, with ample contrast for readability. The component system includes navigation bars, hero sections, feature grids, pricing tables, testimonial blocks, FAQ accordions, call-to-action sections, and form elements. Organized with named layers and groups in Figma, the kit supports drag-and-drop customization and uses free Google Fonts throughout. The responsive design approach ensures compatibility across desktop, tablet, and mobile viewports through a flexible grid architecture.",
+  "usage_tags": ["saas_marketing", "conversion_focused", "modern", "professional", "responsive", "clean", "scalable", "component_based"],
+  "primary_use_case": "Best suited for SaaS startups and mobile app companies needing a complete, professional landing page with all key conversion sections ready to customize.",
+  "layout": {
+    "type": "single_page_scroll",
+    "sections": ["navigation", "hero", "features", "how_it_works", "testimonials", "pricing", "faq", "cta", "footer"]
+  },
+  "colors": {
+    "primary": "#6C63FF",
+    "accent": "#FF6584",
+    "background": "#FFFFFF",
+    "text_primary": "#2D2D2D",
+    "text_secondary": "#7A7A7A"
+  },
+  "typography": {
+    "heading_font": "Inter",
+    "body_font": "Inter",
+    "heading_weights": [600, 700],
+    "body_weight": 400
+  },
+  "components": ["navigation_bar", "hero_section", "feature_cards", "pricing_table", "testimonial_carousel", "faq_accordion", "cta_banner", "contact_form", "footer_links"],
+  "style_vibe": "Modern, clean, professional with soft shadows and rounded UI elements — a contemporary SaaS aesthetic optimized for trust and conversion.",
+  "industry": ["saas", "technology", "mobile_apps", "startup", "software"]
+}

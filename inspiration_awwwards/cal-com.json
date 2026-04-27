@@ -1,0 +1,18 @@
+{
+  "id": "cal-com",
+  "version": "v2",
+  "source": "inspiration_awwwards",
+  "title": "Cal.com – Scheduling Software",
+  "category": "inspiration_awwwards",
+  "url": "https://cal.com",
+  "screenshot": "designs/inspiration_awwwards/cal-com.jpg",
+  "description": "Cal.com is an open-source scheduling platform with a clean, modern dark-themed page. Bold centered typography with purple gradient accent creates immediate visual impact. An animated 3D illustration in the hero section demonstrates the product in action. Feature cards use icons with hover effects and clean spacing. Community-driven branding with a vibrant purple accent color conveys both technical credibility and approachability. The page uses smooth scroll-triggered fade-in animations on feature sections.",
+  "usage_tags": ["open_source", "modern", "animated", "clean", "b2b_friendly", "developer_focused"],
+  "primary_use_case": "Live design inspiration for open-source SaaS scheduling and booking platforms that need a modern, developer-friendly landing page.",
+  "layout": { "type": "single_page_scroll", "sections": ["hero_3d", "feature_grid", "open_source", "testimonials", "pricing"] },
+  "colors": { "primary": "#8B5CF6", "accent": "#EC4899", "background": "#0A0A0F", "text_primary": "#FFFFFF", "text_secondary": "#8B8FA3" },
+  "typography": { "heading_font": "Inter", "body_font": "Inter", "heading_weights": [500, 600, 700], "body_weight": 400 },
+  "components": ["navigation", "hero_section", "feature_cards", "pricing_tables", "cta_section", "footer"],
+  "style_vibe": "Modern, open-source dark theme with purple gradients and animated 3D hero illustration.",
+  "industry": ["saas", "scheduling", "open_source", "productivity"]
+}

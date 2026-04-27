@@ -1,0 +1,32 @@
+{
+  "id": "saas-futuristic-webflow-landing",
+  "version": "v2",
+  "source": "figma_community",
+  "title": "SaaS, Futuristic App — Webflow Landing Page Design",
+  "category": "saas_websites",
+  "url": "https://www.figma.com/community/file/1220395318362406554/saas-futuristic-app-webflow-landing-page-design",
+  "screenshot": "designs/saas_websites/saas-futuristic-webflow-landing.jpg",
+  "description": "A bold, futuristic SaaS landing page designed for a next-generation app platform, built with Webflow design principles in mind. The page pushes boundaries with an experimental dark theme featuring vibrant neon gradients, geometric abstract shapes, and dramatic typography scale contrasts. The hero section commands attention with a massive, gradient-filled headline that spans the full viewport width, paired with a kinetic 3D illustration or abstract graphic element that appears to float in three-dimensional space. The navigation is minimal — just a logo, thin nav links, and a pill-shaped CTA button with a gradient fill. Below the fold, the 'Features' section uses a staggered card grid where each card has a unique background gradient or glass effect, breaking away from monotonous uniformity. Icons are custom geometric glyphs that match the futuristic theme. A 'Product Showcase' section displays the app interface within a floating browser or device frame, with annotation callouts highlighting key innovations. The 'Integrations' section presents partner logos in a continuous marquee animation. The pricing section diverges from standard tables by using interactive toggle cards for monthly vs. annual billing, with savings badges highlighted. A final 'CTA' section uses a full-width gradient background with a central heading, brief supporting text, and dual buttons. Micro-interactions are implied for hover states (card elevation, glow effects, button fills). The color palette combines deep midnight backgrounds (#0B0C10) with electric violet (#7C3AED), cyan (#22D3EE), and hot pink (#EC4899) accents. Typography uses a bold modern grotesk for headings and a lighter weight for body text.",
+  "usage_tags": ["bold", "futuristic", "high_energy", "experimental", "dark_mode", "neon", "gradient_heavy", "product_focused"],
+  "primary_use_case": "Ideal for cutting-edge tech startups, Web3 platforms, and futuristic app products that want a bold, visually arresting landing page that signals innovation.",
+  "layout": {
+    "type": "single_page_scroll",
+    "sections": ["minimal_nav", "hero_3d", "features_staggered", "product_showcase", "integrations_marquee", "pricing_toggle", "cta_gradient", "footer"]
+  },
+  "colors": {
+    "primary": "#7C3AED",
+    "accent": "#22D3EE",
+    "background": "#0B0C10",
+    "text_primary": "#FFFFFF",
+    "text_secondary": "#A0AEC0"
+  },
+  "typography": {
+    "heading_font": "Clash Display",
+    "body_font": "Satoshi",
+    "heading_weights": [500, 600, 700],
+    "body_weight": 400
+  },
+  "components": ["minimal_nav", "hero_3d_illustration", "feature_cards", "device_frame", "marquee_logo_cloud", "pricing_toggle", "cta_section", "footer"],
+  "style_vibe": "Futuristic and experimental with neon gradients, glassmorphism, and massive typography — a high-energy, innovative aesthetic for forward-thinking brands.",
+  "industry": ["technology", "saas", "web3", "startup", "platform"]
+}

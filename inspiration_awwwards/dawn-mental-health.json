@@ -1,0 +1,18 @@
+{
+  "id": "dawn-mental-health",
+  "version": "v2",
+  "source": "inspiration_awwwards",
+  "title": "Dawn – AI Mental Health Support",
+  "category": "inspiration_awwwards",
+  "url": "https://joindawn.com",
+  "screenshot": "designs/inspiration_awwwards/dawn-mental-health.jpg",
+  "description": "Dawn is a beautifully designed AI mental health platform by Sword Health. The site uses warm, human-centric design with a soft beige and golden-orange color palette that feels calming and approachable — perfect for its target audience. The hero section pairs a warm lifestyle photograph with gentle typography and a simple email capture form. The page uses a bold editorial-style headline 'Your mind is always on. Your support should be, too.' that scrolls with parallax. A full-size chat interface mockup demonstrates the AI conversation experience. The 'Personalized support' section uses tabbed cards with lifestyle photography and interactive chat previews showing real conversations. Clinical credibility is established through advisor profiles with headshots and institutional affiliations (Harvard, Yale, Stanford, NIMH). The page includes a testimonial carousel, FAQ accordion, and a comprehensive footer. Navigation is minimal with only two links. The design prioritizes trust and warmth over conversion pressure, with soft imagery, rounded UI elements, and generous whitespace. The color palette is predominantly warm beige, soft white, and muted golden-orange accents.",
+  "usage_tags": ["warm", "human_centric", "soft", "trust_building", "health_focused", "editorial", "accessible", "clean"],
+  "primary_use_case": "Excellent reference for health-tech, wellness, and AI products that need a warm, trustworthy, human-centered design that balances clinical credibility with approachability.",
+  "layout": { "type": "single_page_scroll", "sections": ["hero_photography", "chat_mockup", "features_tabbed", "science_credibility", "testimonials", "faq_accordion", "footer"] },
+  "colors": { "primary": "#2D1810", "accent": "#E8A87C", "background": "#FAF5F0", "text_primary": "#2D1810", "text_secondary": "#6B5B4F", "surface": "#FFFFFF" },
+  "typography": { "heading_font": "Georgia", "body_font": "Inter", "heading_weights": [400, 500, 700], "body_weight": 400 },
+  "components": ["parallax_hero", "chat_interface_mockup", "tabbed_cards", "advisor_profiles", "testimonial_carousel", "faq_accordion", "email_capture", "footer"],
+  "style_vibe": "Warm, human-centered editorial design with lifestyle photography, serif elegance, and clinical credibility — a calm, trustworthy health-tech aesthetic.",
+  "industry": ["health_tech", "mental_health", "ai", "wellness", "healthcare"]
+}

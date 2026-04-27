@@ -1,0 +1,18 @@
+{
+  "id": "air-jetbrains",
+  "version": "v2",
+  "source": "inspiration_awwwards",
+  "title": "JetBrains Air – Multitask with agents",
+  "category": "inspiration_awwwards",
+  "url": "https://www.jetbrains.com/air/",
+  "screenshot": "designs/inspiration_awwwards/air-jetbrains.jpg",
+  "description": "JetBrains Air is a bold, futuristic product page for JetBrains' AI coding agent. The design departs dramatically from traditional JetBrains branding — using a dark, space-themed aesthetic with neon purple, cyan, and magenta gradient overlays. The hero uses a massive animated headline with particle effects and a floating 3D interface mockup. Feature sections use glassmorphism cards with backdrop blur and gradient borders. AI agent capabilities are shown through interactive code snippet demonstrations. The design communicates cutting-edge AI technology through its visual language — bright neon gradients, transparency layers, animated particle systems, and cyberpunk-inspired UI elements. The color palette is deep midnight with vibrant purple primary (#7C3AED) and cyan secondary accents. This is an unusually bold design for JetBrains (known for more conservative design) and signals a deliberate shift toward a more futuristic brand identity for their AI products.",
+  "usage_tags": ["futuristic", "dark_mode", "neon", "glassy", "developer_focused", "ai_focused", "gradient_heavy", "animated"],
+  "primary_use_case": "Great reference for AI coding tools, developer products, and established brands launching AI features that want a futuristic, neon-heavy design departure from their main brand.",
+  "layout": { "type": "single_page_scroll", "sections": ["hero_particles", "features_glassmorphism", "demo_code", "capabilities", "pricing", "cta"] },
+  "colors": { "primary": "#7C3AED", "accent": "#06B6D4", "background": "#0A0A1A", "text_primary": "#FFFFFF", "text_secondary": "#94A3B8", "tertiary": "#EC4899" },
+  "typography": { "heading_font": "Inter", "body_font": "Inter", "heading_weights": [500, 600, 700, 800], "body_weight": 400 },
+  "components": ["animated_particle_hero", "glassmorphism_cards", "code_snippets", "3d_interface_mockup", "capability_grid", "pricing_cards", "cta_section"],
+  "style_vibe": "Futuristic, cyberpunk-inspired AI product page with neon gradients, glassmorphism, particle effects, and a bold departure from traditional brand design.",
+  "industry": ["developer_tools", "ai", "ide", "jetbrains", "technology"]
+}

@@ -1,0 +1,76 @@
+{
+  "id": "positivus-landing-page",
+  "version": "v2",
+  "source": "figma_community",
+  "title": "Positivus Landing Page Design",
+  "category": "landing_pages",
+  "url": "https://www.figma.com/community/file/1230604708032389430/positivus-landing-page-design",
+  "screenshot": "designs/landing_pages/positivus-landing-page.jpg",
+  "description": "Positivus is a striking, modern landing page design by Olga (olgaaverchenko on Figma) for digital marketing agencies. It has achieved massive community traction with 156k users, 3.5k likes, and 41 comments, and has been independently re-implemented by developers in React/Next.js (GitHub: zakariamouhid/positivus-from-figma), Nuxt (GitHub: prpanto/positivus), and plain React (GitHub: HazemSarhan/positivus-landing-page-react) — making it one of the most recreated Figma-to-code templates. The design breaks away from conventional SaaS minimalism by using high-contrast color blocking with a distinctive lime-green primary (#B9FF66) against dark navy (#191A23) accents. The hero features a large headline with curved underline effect and floating abstract 3D sphere illustration. Services are showcased through rounded cards with alternating backgrounds — lime-green cards with white text, or dark cards with green accents — each containing custom icon, title, description, and arrow link. The \"Our Working Process\" section uses expandable accordion-style numbered steps. Includes case studies section, testimonial carousel, team member grid with photo cards, contact form, and footer. The design uses Figma auto-layout throughout for maximum efficiency. The font is Space Grotesk at weights 500 and 700 for headings, 400 for body. The design has 8px grid spacing throughout. Olga also created related successful templates (Solus wellness template, Nexus AI event page, AIChefMate app) forming a recognizable design style. Positivus is a single-screen desktop design with no mobile variant included. The color system: lime-green primary, pure black background for certain accent sections, white for main backgrounds. The design is optimized for brand-forward agencies wanting to showcase creative confidence.",
+  "usage_tags": [
+    "bold",
+    "high_contrast",
+    "playful",
+    "agency",
+    "trust_building",
+    "conversion_focused",
+    "colorful",
+    "community_favorite",
+    "widely_implemented",
+    "auto_layout"
+  ],
+  "primary_use_case": "Perfect for digital marketing agencies, creative studios, and consulting firms that want a vibrant, personality-driven landing page that stands out.",
+  "layout": {
+    "type": "single_screen_desktop",
+    "sections": [
+      "navigation",
+      "hero_with_illustration",
+      "services_grid",
+      "case_studies",
+      "process_accordion",
+      "testimonials",
+      "team",
+      "contact_form",
+      "footer"
+    ],
+    "grid": "12_column",
+    "max_width": "1440px"
+  },
+  "colors": {
+    "primary": "#B9FF66",
+    "accent": "#191A23",
+    "background": "#FFFFFF",
+    "text_primary": "#191A23",
+    "text_secondary": "#666666",
+    "card_dark": "#191A23",
+    "card_green": "#B9FF66"
+  },
+  "typography": {
+    "heading_font": "Space Grotesk",
+    "body_font": "Space Grotesk",
+    "heading_weights": [
+      500,
+      700
+    ],
+    "body_weight": 400,
+    "body_weight_heavy": 500
+  },
+  "components": [
+    "navigation_bar",
+    "hero_3d_sphere",
+    "service_cards_alternating",
+    "case_studies_grid",
+    "accordion_process",
+    "testimonial_carousel",
+    "team_grid",
+    "contact_form",
+    "footer_links"
+  ],
+  "style_vibe": "Playful yet professional with high-contrast lime-green and black color blocking, Space Grotesk typography, and geometric 3D accents — a distinctive, brand-forward agency aesthetic.",
+  "industry": [
+    "digital_marketing",
+    "creative_agency",
+    "advertising",
+    "consulting"
+  ]
+}

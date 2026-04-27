@@ -1,0 +1,80 @@
+{
+  "id": "landify-v2-ui-kit",
+  "version": "v2",
+  "source": "figma_community",
+  "title": "Landify - Landing Page UI Kit v2",
+  "category": "saas_websites",
+  "url": "https://www.figma.com/community/file/894552273937682724/landify-landing-page-ui-kit-v2",
+  "screenshot": "designs/saas_websites/landify-v2-ui-kit.jpg",
+  "description": "Landify v2 is a premium-grade landing page UI kit by Aravind Solaiappan, one of the most popular Figma Community resources with 197k users and 88 comments. The kit contains 178 blocks across 15 categories and 500+ components, making it one of the most comprehensive free landing page systems available. The free version includes 5 ready-to-use sample pages and uses Tailwind CSS utility class naming for easy developer handoff. The kit supports all three breakpoints — desktop (1920px), tablet, and mobile. Built with Figma Auto Layout 4.0 and component properties, every element is well-organized with named layers. The color system uses centralized text, color, and effect styles for global theming. Typography uses Inter at multiple weights (500, 600, 700, 800) with a defined type scale. The kit is organized into 15 block categories including navigation, hero, features, content, pricing, team, testimonials, stats, CTA, forms, footers, blog, contact, portfolio, and e-commerce. The design language follows a clean, enterprise aesthetic with blue primary (#2563EB) and purple accent (#7C3AED) against neutral backgrounds. The creator provides a paid v3 version through landify.design. Licensed under CC BY 4.0.",
+  "usage_tags": [
+    "comprehensive",
+    "enterprise_grade",
+    "scalable",
+    "conversion_focused",
+    "professional",
+    "responsive",
+    "component_based",
+    "design_system_ready",
+    "tailwind_compatible",
+    "community_favorite"
+  ],
+  "primary_use_case": "Ideal for SaaS startups and established tech companies that need a production-ready, scalable landing page system with hundreds of pre-built sections.",
+  "layout": {
+    "type": "multi_template",
+    "sections": [
+      "navigation",
+      "hero_mockup",
+      "logo_cloud",
+      "feature_grid",
+      "testimonials",
+      "stats_bar",
+      "pricing_table",
+      "faq",
+      "cta_banner",
+      "footer"
+    ]
+  },
+  "colors": {
+    "primary": "#2563EB",
+    "accent": "#7C3AED",
+    "background": "#FFFFFF",
+    "text_primary": "#111827",
+    "text_secondary": "#6B7280",
+    "success": "#10B981"
+  },
+  "typography": {
+    "heading_font": "Inter",
+    "body_font": "Inter",
+    "heading_weights": [
+      500,
+      600,
+      700,
+      800
+    ],
+    "body_weight": 400
+  },
+  "components": [
+    "navigation_bars",
+    "hero_sections",
+    "feature_grids",
+    "pricing_tables",
+    "testimonial_cards",
+    "team_grids",
+    "stat_counters",
+    "cta_banners",
+    "contact_forms",
+    "footer_layouts",
+    "blog_cards",
+    "portfolio_grids",
+    "ecommerce_blocks"
+  ],
+  "style_vibe": "Enterprise-clean with strong visual hierarchy, generous whitespace, and a polished tech aesthetic — designed for trust, credibility, and conversions.",
+  "industry": [
+    "saas",
+    "technology",
+    "startup",
+    "b2b",
+    "enterprise_software"
+  ]
+}

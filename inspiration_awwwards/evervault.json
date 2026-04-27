@@ -1,0 +1,61 @@
+{
+  "id": "evervault",
+  "version": "v2",
+  "source": "inspiration_awwwards",
+  "title": "Evervault — Flexible Payments Security",
+  "category": "inspiration_awwwards",
+  "url": "https://evervault.com",
+  "screenshot": "designs/inspiration_awwwards/evervault.jpg",
+  "description": "Dark, security-focused SaaS page with a sophisticated deep space theme. Hero uses large centered headline with subtle particle animation background. Features use alternating full-width sections with UI screenshots. Clean sans-serif typography with green accent for security trust signals. The live site uses a hero_particle, features_alternating, customer_stories, stats, cta structure with strong visual hierarchy and smooth scroll-triggered animations throughout. Navigation is clean and unobtrusive. The color palette and typography work together to create a cohesive brand experience that aligns with the product category.",
+  "usage_tags": [
+    "dark_mode",
+    "trust_building",
+    "b2b",
+    "professional",
+    "clean",
+    "security_focused"
+  ],
+  "primary_use_case": "Live design inspiration for evervault — flexible payments security-style products.",
+  "layout": {
+    "type": "single_page_scroll",
+    "sections": [
+      "hero_particle",
+      "features_alternating",
+      "customer_stories",
+      "stats",
+      "cta"
+    ]
+  },
+  "colors": {
+    "primary": "#0A0A1A",
+    "accent": "#22C55E",
+    "background": "#050510",
+    "text_primary": "#FFFFFF",
+    "text_secondary": "#8B8FA3"
+  },
+  "typography": {
+    "heading_font": "Inter",
+    "body_font": "Inter",
+    "heading_weights": [
+      500,
+      600,
+      700
+    ],
+    "body_weight": 400
+  },
+  "components": [
+    "navigation",
+    "hero_section",
+    "feature_sections",
+    "cta_section",
+    "footer"
+  ],
+  "style_vibe": "Dark, security-focused SaaS page with a sophisticated deep space theme.",
+  "industry": [
+    "saas",
+    "security",
+    "payments",
+    "fintech",
+    "b2b"
+  ]
+}

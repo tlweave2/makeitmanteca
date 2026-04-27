@@ -1,0 +1,18 @@
+{
+  "id": "paperclip-orchestration",
+  "version": "v2",
+  "source": "inspiration_awwwards",
+  "title": "Paperclip – Open-source AI orchestration",
+  "category": "inspiration_awwwards",
+  "url": "https://paperclip.dev",
+  "screenshot": "designs/inspiration_awwwards/paperclip-orchestration.jpg",
+  "description": "Paperclip is an open-source AI orchestration platform landing page with a distinctive, playful pink and white color scheme — an unusual and memorable choice for a developer tool. The design uses a minimalist approach with a large centered headline in a custom display font, accompanied by a subtle animated illustration of the paperclip mascot. Feature cards use rounded corners with soft shadows and a clean card grid. Open-source badges and GitHub stats are prominently displayed. The design uses micro-animations — the paperclip character bounces gently, cards have hover lifts, and scroll-triggered reveals. The color palette is refreshingly different for developer tools: hot pink (#FF3366) primary against clean white backgrounds, with subtle warm gray accents. The pink makes an audacious statement that the product is different from traditional orchestration tools. Typography uses a bold sans-serif for headings with clean body text. The site has a 'zero-human companies' tagline that tells you immediately what the product does.",
+  "usage_tags": ["playful", "bold", "minimal", "developer_focused", "pink_accent", "open_source", "clean", "memorable_branding"],
+  "primary_use_case": "Excellent reference for developer tools and open-source platforms wanting a bold, unexpected brand color (pink) in a traditionally blue/indigo developer space.",
+  "layout": { "type": "single_page_scroll", "sections": ["hero_mascot", "features_open_source", "demo", "community_stats", "cta"] },
+  "colors": { "primary": "#FF3366", "accent": "#FF6B9D", "background": "#FFFFFF", "text_primary": "#1A1A1A", "text_secondary": "#6B7280", "surface": "#F8F8F8" },
+  "typography": { "heading_font": "Inter", "body_font": "Inter", "heading_weights": [500, 600, 700, 800], "body_weight": 400 },
+  "components": ["animated_mascot", "feature_cards", "code_snippets", "github_stats", "open_source_badge", "cta_section"],
+  "style_vibe": "Playful, bold developer tools page with hot pink branding — a refreshingly unexpected color choice in the traditionally conservative developer space.",
+  "industry": ["developer_tools", "ai", "open_source", "orchestration", "technology"]
+}

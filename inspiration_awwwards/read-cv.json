@@ -1,0 +1,18 @@
+{
+  "id": "read-cv",
+  "version": "v2",
+  "source": "inspiration_awwwards",
+  "title": "read.cv – Professional Profiles",
+  "category": "inspiration_awwwards",
+  "url": "https://read.cv",
+  "screenshot": "designs/inspiration_awwwards/read-cv.jpg",
+  "description": "Read.cv is a minimal, typography-centric professional network page. Uses a clean white background with serif headings — an unusual choice for a tech product that creates an editorial, thoughtful feel. Centered layout with generous whitespace makes the page feel unhurried and premium. Clean card-based profile previews show how the platform works. Understated design that lets content shine. No heavy animations or flashy elements — pure typographic elegance. The design philosophy is confidence through restraint: the page trusts that good typography and content hierarchy are enough. A fresh alternative to the standard social network landing page template.",
+  "usage_tags": ["minimal", "serif", "clean", "professional", "typography_driven", "content_first"],
+  "primary_use_case": "Live design inspiration for professional networks, portfolio platforms, and content-first products that want an understated, typography-driven page.",
+  "layout": { "type": "single_page_scroll", "sections": ["hero_centered", "featured_profiles", "features", "cta"] },
+  "colors": { "primary": "#000000", "accent": "#3B82F6", "background": "#FFFFFF", "text_primary": "#000000", "text_secondary": "#6B7280" },
+  "typography": { "heading_font": "Georgia", "body_font": "Inter", "heading_weights": [400, 500, 600], "body_weight": 400 },
+  "components": ["navigation", "hero_section", "profile_cards", "feature_blocks", "cta_section", "footer"],
+  "style_vibe": "Minimal, typography-driven professional network with serif headings, generous whitespace, and an editorial, unhurried feel.",
+  "industry": ["social_network", "professional", "career", "saas"]
+}

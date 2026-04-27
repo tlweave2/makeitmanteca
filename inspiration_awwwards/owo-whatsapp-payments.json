@@ -1,0 +1,18 @@
+{
+  "id": "owo-whatsapp-payments",
+  "version": "v2",
+  "source": "inspiration_awwwards",
+  "title": "OWO – WhatsApp Payments by Mono",
+  "category": "inspiration_awwwards",
+  "url": "https://owo.app",
+  "screenshot": "designs/inspiration_awwwards/owo-whatsapp-payments.jpg",
+  "description": "OWO is a fintech landing page for WhatsApp-based payments, powered by Mono and Flutterwave. The design uses a bold African-inspired color palette of deep brown, cream, and electric orange that feels warm, trustworthy, and culturally resonant. The hero section features a split layout with a WhatsApp chat interface mockup on one side showing real payment conversations, and product messaging on the other. The headline 'Send money like you chat, with Owo' appears in an animated typewriter-style reveal. Feature sections use vertical scrolling with WhatsApp chat previews demonstrating each use case — sending money, buying airtime, paying bills via chat, and scheduling payments. Each feature tile shows a real chat conversation with bank logos below. The scrolling experience is smooth and sticky, with chat UI animating as users scroll through features. A bank logo bar shows partner institutions including Access Bank and others. The security section highlights Owo Passcode, WhatsApp Passkey, and biometric chat lock with lock icons. The FAQ uses an accordion pattern with a chat-style visual. A QR code allows instant WhatsApp connection. The page ends with a large animated phone mockup showing the core chat interface. The design is highly mobile-optimized — expected for a WhatsApp-based product — with thumb-friendly tap targets and large typography.",
+  "usage_tags": ["bold", "warm", "fintech", "chat_based", "mobile_first", "animated", "culturally_distinct", "scroll_experience"],
+  "primary_use_case": "Excellent reference for fintech products, chat-based payment apps, and African or emerging-market fintech brands needing a warm, mobile-first, WhatsApp-integrated landing page.",
+  "layout": { "type": "single_page_scroll", "sections": ["hero_chat_mockup", "features_scroll", "bank_partners", "security", "how_it_works", "faq", "cta_qr"] },
+  "colors": { "primary": "#2D1810", "accent": "#FF6B35", "background": "#FFF8F0", "text_primary": "#2D1810", "text_secondary": "#6B5B4F", "surface": "#FFFFFF", "whatsapp_green": "#25D366" },
+  "typography": { "heading_font": "Inter", "body_font": "Inter", "heading_weights": [500, 600, 700, 800], "body_weight": 400 },
+  "components": ["chat_mockup_hero", "feature_tiles", "bank_logo_bar", "security_icons", "qr_code", "faq_accordion", "phone_mockup", "animated_headline"],
+  "style_vibe": "Warm, bold fintech with African-inspired earth tones and electric orange — a mobile-first, chat-interface-driven design for WhatsApp-based payments.",
+  "industry": ["fintech", "payments", "mobile_money", "banking", "african_market"]
+}

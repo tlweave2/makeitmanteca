@@ -1,0 +1,75 @@
+{
+  "id": "liquid-maestro-bar-club",
+  "version": "v2",
+  "source": "figma_community",
+  "title": "Liquid Maestro - Bar - Club - Restaurant Landing Page",
+  "category": "landing_pages",
+  "url": "https://www.figma.com/community/file/1253379413842844826/liquid-maestro-bar-club-restaurant-landing-page",
+  "screenshot": "designs/landing_pages/liquid-maestro-bar-club.jpg",
+  "description": "Liquid Maestro is a sophisticated landing page template by XIDE (xide.design) for luxury bar and mixology clubs, actually designed for a real venue in Downtown Los Angeles. With 4.7k users and 110 prototype views, it has solid community traction. The template uses a dark, moody color palette with warm amber and gold accent tones. The hero section features a stunning full-bleed header image with overlaid venue name and tagline. Menu sections display signature cocktails in elegant card layouts with descriptive text and pricing. An events calendar highlights live music and DJ performances with date/time cards. A gallery section showcases the venue interior through a responsive image grid. The contact section includes location with embedded map placeholder, hours of operation, phone, and a reservation booking form. Built entirely with Figma components — all assets (colors, images, menu items) are easily customizable. The responsive layout adapts to desktop and mobile. The color palette of deep brown (background, text primary) and gold accent (accent, CTA) evokes premium cocktail lounge atmosphere. The template is purpose-built for hospitality — distinctly different from typical SaaS templates. Typography uses Playfair Display serif for elegant headings and Inter for body text. Includes social media icons for Instagram and Facebook. The prototype has 110 views indicating active community engagement.",
+  "usage_tags": [
+    "dark_mode",
+    "luxury",
+    "atmospheric",
+    "hospitality",
+    "venue_focused",
+    "immersive",
+    "gold_accent",
+    "figma_components",
+    "responsive"
+  ],
+  "primary_use_case": "Ideal for upscale bars, cocktail lounges, nightclubs, and luxury restaurants needing a dark, atmospheric landing page that captures the venue's premium vibe.",
+  "layout": {
+    "type": "single_page_scroll",
+    "sections": [
+      "hero_image",
+      "introduction",
+      "signature_cocktails",
+      "menu",
+      "events_calendar",
+      "gallery",
+      "reservations",
+      "contact",
+      "footer"
+    ]
+  },
+  "colors": {
+    "primary": "#1A0F0A",
+    "accent": "#D4A841",
+    "background": "#0D0805",
+    "text_primary": "#F5F0EB",
+    "text_secondary": "#B8A99A"
+  },
+  "typography": {
+    "heading_font": "Playfair Display",
+    "body_font": "Inter",
+    "heading_weights": [
+      400,
+      500,
+      600,
+      700
+    ],
+    "body_weight": 300
+  },
+  "components": [
+    "full_bleed_hero_image",
+    "cocktail_cards",
+    "menu_sections",
+    "event_calendar",
+    "gallery_image_grid",
+    "reservation_form",
+    "map_placeholder",
+    "hours_display",
+    "social_media_icons",
+    "customizable_components"
+  ],
+  "style_vibe": "Dark and luxurious with warm amber-gold accents, Playfair Display serif elegance, and immersive atmospheric photography for upscale nightlife venues — purpose-built for hospitality, not adapted from SaaS.",
+  "industry": [
+    "hospitality",
+    "nightlife",
+    "bar",
+    "restaurant",
+    "entertainment",
+    "luxury"
+  ]
+}

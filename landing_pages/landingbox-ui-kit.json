@@ -1,0 +1,32 @@
+{
+  "id": "landingbox-ui-kit",
+  "version": "v2",
+  "source": "figma_community",
+  "title": "LandingBox - Figma UI Kit and Design System - Landing Page UI Wireframes - Free Wireframe Builder",
+  "category": "landing_pages",
+  "url": "https://www.figma.com/community/file/1350836811191304513/landingbox-figma-ui-kit-and-design-system-landing-page-ui-wireframes-free-wireframe-builder",
+  "screenshot": "designs/landing_pages/landingbox-ui-kit.jpg",
+  "description": "LandingBox is a comprehensive wireframe-to-production UI kit and design system that provides over 200+ landing page templates and 1000+ pre-built components organized in a modular, atomic design structure. Unlike single-page designs, LandingBox functions as a complete landing page building system — it includes diverse page templates across multiple industries including SaaS, e-commerce, agency, portfolio, mobile app, fintech, education, and healthcare. The wireframe layer uses grayscale boxes with placeholder text and image containers, allowing rapid structural prototyping before visual design begins. Each template includes dedicated layouts for hero sections (split, centered, full-screen video, angled split), navigation patterns (top bar, hamburger menu, sidebar, centered logo), content grids (2-col, 3-col, 4-col, masonry, staggered), and footer styles (simple, multi-column, newsletter, app download). The design system provides a cohesive token system for colors (primary, secondary, neutral, semantic), typography (type scale with defined sizes/weights/line heights), spacing (4px base grid), elevation (card shadows), and border radius values. Components include buttons (filled, outlined, ghost, icon), form inputs, navigation elements, cards (product, testimonial, pricing, team, blog), modals, accordions, tabs, and alerts. The system supports auto-layout with resizing constraints for responsive behavior. Color tokens default to a versatile navy/indigo primary palette that can be globally swapped. The typography scale uses Inter at multiple weights, ensuring clarity at every size.",
+  "usage_tags": ["comprehensive", "design_system", "wireframe_to_production", "component_based", "modular", "scalable", "responsive", "multi_industry"],
+  "primary_use_case": "Perfect for design agencies and product teams that need a complete landing page building system — from wireframe prototyping through to production-ready visual design.",
+  "layout": {
+    "type": "design_system_multi_template",
+    "sections": ["wireframes", "hero_templates", "feature_layouts", "pricing_tables", "testimonial_blocks", "footer_styles", "component_library"]
+  },
+  "colors": {
+    "primary": "#1E40AF",
+    "accent": "#F59E0B",
+    "background": "#FFFFFF",
+    "text_primary": "#1E293B",
+    "text_secondary": "#64748B"
+  },
+  "typography": {
+    "heading_font": "Inter",
+    "body_font": "Inter",
+    "heading_weights": [500, 600, 700],
+    "body_weight": 400
+  },
+  "components": ["wireframe_templates", "hero_sections", "navigation_patterns", "grid_systems", "ui_components", "form_elements", "card_variants", "modals_dialogs", "footer_templates"],
+  "style_vibe": "Clean, systematic, and production-oriented — a versatile design system that prioritizes clarity, consistency, and rapid iteration across multiple project types.",
+  "industry": ["design", "technology", "ecommerce", "education", "healthcare", "finance", "saas"]
+}

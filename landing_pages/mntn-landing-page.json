@@ -1,0 +1,72 @@
+{
+  "id": "mntn-landing-page",
+  "version": "v2",
+  "source": "figma_community",
+  "title": "MNTN - Landing Page",
+  "category": "landing_pages",
+  "url": "https://www.figma.com/community/file/788675347108478517/mntn-landing-page",
+  "screenshot": "designs/landing_pages/mntn-landing-page.jpg",
+  "description": "MNTN is an atmospheric, visually-driven landing page by Kryston Schwarze designed for an outdoor adventure and mountain exploration brand. With 82.1k downloads, it is one of the most popular free landing page designs on Figma Community. The design uses a full-screen background video or hero image of misty mountain peaks with translucent overlay navigation and bold, oversized white typography creating a cinematic first impression. The hero features a minimalist top nav bar with logo, page links, and account/search icons overlaid on the hero image. The main headline \"MNTN\" appears in a large Playfair Display serif font with subtitle tagline and scroll-down indicator. As the user scrolls, content sections reveal using parallax effects with layered mountain imagery shifting at different speeds. Content sections include gear guides with clean cards overlaid on scenic backgrounds, trail difficulty ratings with visual indicators, and trip planning information. A \"popular gear\" section uses horizontal scroll with product cards featuring photography, pricing, and star ratings. The footer includes expedition dates, location maps, and social links. The color palette is nature-inspired: deep greens (#1A2F2B), slate grays, warm gold accents (#F4B41A), and crisp white text. The design prioritizes emotional storytelling over dense information using hero imagery and parallax motion to evoke adventure. Uses Inter for body text, Playfair Display for headings. Single-page with smooth anchor scroll navigation.",
+  "usage_tags": [
+    "cinematic",
+    "immersive",
+    "storytelling",
+    "adventure",
+    "visual_first",
+    "premium",
+    "atmospheric",
+    "parallax",
+    "serif",
+    "popular_82k"
+  ],
+  "primary_use_case": "Ideal for outdoor brands, adventure tourism companies, or premium lifestyle products that want an emotionally resonant, visually immersive brand experience.",
+  "layout": {
+    "type": "single_page_parallax",
+    "sections": [
+      "hero_video",
+      "intro_text",
+      "gear_showcase",
+      "trail_guide",
+      "product_cards",
+      "footer"
+    ]
+  },
+  "colors": {
+    "primary": "#FFFFFF",
+    "accent": "#F4B41A",
+    "background": "#1A2F2B",
+    "text_primary": "#FFFFFF",
+    "text_secondary": "#B8C5C0",
+    "card_bg": "rgba(26,47,43,0.85)"
+  },
+  "typography": {
+    "heading_font": "Playfair Display",
+    "body_font": "Inter",
+    "heading_weights": [
+      600,
+      700,
+      900
+    ],
+    "body_weight": 300
+  },
+  "components": [
+    "overlay_navigation",
+    "full_screen_hero_video",
+    "parallax_sections",
+    "product_cards_horizontal_scroll",
+    "star_ratings",
+    "scroll_indicator",
+    "trail_difficulty_indicators",
+    "gear_guide_cards",
+    "footer_social_links"
+  ],
+  "style_vibe": "Cinematic and atmospheric with a premium outdoor aesthetic — full-screen video hero, parallax depth layers, Playfair Display serif typography, and warm gold accents against deep forest greens.",
+  "industry": [
+    "outdoor",
+    "adventure",
+    "travel",
+    "lifestyle",
+    "recreation",
+    "tourism"
+  ]
+}

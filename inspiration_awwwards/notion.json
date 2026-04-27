@@ -1,0 +1,68 @@
+{
+  "id": "notion",
+  "version": "v2",
+  "source": "inspiration_awwwards",
+  "title": "Notion – The AI workspace",
+  "category": "inspiration_awwwards",
+  "url": "https://notion.com",
+  "screenshot": "designs/inspiration_awwwards/notion.jpg",
+  "description": "Notion is arguably the most influential SaaS landing page of the past decade. The page uses a revolutionary serif/sans-serif hybrid typography approach — Playfair Display or similar serif for elegant headings paired with Inter for clean body text. The hero features a full-width product mockup on a subtle gradient background showing Notions actual interface. The design philosophy is radical restraint: generous whitespace, no aggressive CTAs, no overwhelming feature lists. Below the fold, feature sections use staggered card layouts with icons and brief descriptions. A dedicated templates section showcases community-created templates. Testimonial cards appear with customer logos and quotes. The page uses subtle scroll animations with elements fading upward. The color palette is almost entirely grayscale with a distinctive yellow accent (#FFD02B) carefully placed on CTAs and highlights. What makes Notions page remarkable is how it feels more like a high-end editorial site than a SaaS marketing page. The design communicates confidence through simplicity — it trusts the product and brand to speak for themselves. The page has inspired countless copycat designs and established serif typography as a legitimate choice for tech products.",
+  "usage_tags": [
+    "clean",
+    "minimal",
+    "serif",
+    "professional",
+    "product_focused",
+    "b2b_friendly",
+    "iconic",
+    "editorial"
+  ],
+  "primary_use_case": "Live design inspiration for notion-style products.",
+  "layout": {
+    "type": "single_page_scroll",
+    "sections": [
+      "hero_mockup",
+      "features_cards",
+      "templates",
+      "testimonials",
+      "pricing"
+    ]
+  },
+  "colors": {
+    "primary": "#000000",
+    "accent": "#FFD02B",
+    "background": "#FFFFFF",
+    "text_primary": "#000000",
+    "text_secondary": "#6B7280",
+    "border": "#E5E7EB"
+  },
+  "typography": {
+    "heading_font": "Playfair Display",
+    "body_font": "Inter",
+    "heading_weights": [
+      400,
+      500,
+      600
+    ],
+    "body_weight": 400
+  },
+  "components": [
+    "transparent_nav",
+    "hero_mockup",
+    "feature_cards",
+    "template_grid",
+    "testimonial_cards",
+    "logo_bar",
+    "pricing_tables",
+    "cta_section",
+    "footer"
+  ],
+  "style_vibe": "Iconic, clean gray-scale SaaS page.",
+  "industry": [
+    "saas",
+    "productivity",
+    "collaboration",
+    "knowledge_management",
+    "technology"
+  ]
+}

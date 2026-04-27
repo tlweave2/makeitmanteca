@@ -1,0 +1,18 @@
+{
+  "id": "skiff",
+  "version": "v2",
+  "source": "inspiration_awwwards",
+  "title": "Skiff – Privacy-First Workspace",
+  "category": "inspiration_awwwards",
+  "url": "https://skiff.com",
+  "screenshot": "designs/inspiration_awwwards/skiff.jpg",
+  "description": "Skiff is a clean, privacy-focused workspace page with a light blue and white palette that communicates security and clarity. Serif headings paired with clean sans-serif body text create an editorial, trustworthy feel. Subtle gradient backgrounds with floating UI mockups showing the encrypted workspace interface. Trust signals are prominently displayed including encryption badges and security certifications. The page uses minimal animations — mostly gentle fade-ins on scroll. The color palette of soft blues against white inspires calm and confidence, an intentional choice for a security-focused product that wants to feel approachable rather than intimidating.",
+  "usage_tags": ["clean", "minimal", "serif", "trust_building", "privacy_focused", "professional"],
+  "primary_use_case": "Live design inspiration for security and privacy-focused products needing a trustworthy, approachable landing page with subtle trust signals.",
+  "layout": { "type": "single_page_scroll", "sections": ["hero_mockup", "features_grid", "privacy_section", "pricing", "download"] },
+  "colors": { "primary": "#1E40AF", "accent": "#3B82F6", "background": "#F8FAFC", "text_primary": "#1E293B", "text_secondary": "#64748B" },
+  "typography": { "heading_font": "Georgia", "body_font": "Inter", "heading_weights": [400, 500, 600], "body_weight": 400 },
+  "components": ["navigation", "hero_section", "feature_cards", "security_badges", "pricing_cards", "download_buttons", "footer"],
+  "style_vibe": "Trustworthy, privacy-focused light theme with serif headings, soft blues, and clean security signal placement throughout.",
+  "industry": ["saas", "privacy", "productivity", "collaboration"]
+}

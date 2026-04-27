@@ -1,0 +1,18 @@
+{
+  "id": "portfolio-creative-agency-website",
+  "version": "v2",
+  "source": "figma_community",
+  "title": "Modern Brand Design Studio - Portfolio Website",
+  "category": "landing_pages",
+  "url": "https://www.figma.com/community/file/1498103274059654620/modern-brand-design-studio",
+  "screenshot": "designs/landing_pages/portfolio-creative-agency-website.jpg",
+  "description": "A modern brand design studio portfolio website by Figma Community (Figma Sites), with 43.3k users and 4.7k likes. This template is purpose-built for creative agencies, brand studios, and design firms to showcase their work with sophistication. The design features a full-screen hero with studio name and tagline over a featured project image. Project case studies use large photography with overlaid project info, client names, and disciplines. The about section shares the studio's philosophy and team with headshots. Services are presented as clean cards with icon, title, and description. The contact section includes a form with project type selector and budget range. The color palette is minimal and sophisticated — using a clean white background with black text and sparing use of a warm accent color. Typography uses a refined serif for headings and clean sans-serif for body. The layout is centered and editorial, with generous whitespace that evokes premium print design. Built with Figma Sites for responsive web output.",
+  "usage_tags": ["portfolio", "agency", "sophisticated", "photography_heavy", "clean", "serif", "premium", "figma_sites"],
+  "primary_use_case": "Perfect for creative agencies, brand studios, and design firms needing a sophisticated portfolio website with editorial layouts and case study presentations.",
+  "layout": { "type": "single_page_scroll", "sections": ["hero_project", "featured_work", "case_studies", "about_team", "services", "contact_form"] },
+  "colors": { "primary": "#000000", "accent": "#C9A96E", "background": "#FFFFFF", "text_primary": "#000000", "text_secondary": "#6B5B4F", "surface": "#F8F6F3" },
+  "typography": { "heading_font": "Playfair Display", "body_font": "Inter", "heading_weights": [400, 500, 600], "body_weight": 300 },
+  "components": ["full_bleed_hero", "project_cards", "case_study_layouts", "team_grid", "service_cards", "contact_form", "testimonial_blocks"],
+  "style_vibe": "Sophisticated portfolio editorial design with refined serif typography, generous whitespace, and gold accents — premium agency showcase aesthetic.",
+  "industry": ["creative_agency", "branding", "design_studio", "portfolio", "advertising"]
+}

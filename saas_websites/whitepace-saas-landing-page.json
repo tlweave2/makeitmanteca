@@ -1,0 +1,32 @@
+{
+  "id": "whitepace-saas-landing-page",
+  "version": "v2",
+  "source": "figma_community",
+  "title": "Whitepace - SaaS Landing Page",
+  "category": "saas_websites",
+  "url": "https://www.figma.com/community/file/1156860863353724933/whitepace-saas-landing-page",
+  "screenshot": "designs/saas_websites/whitepace-saas-landing-page.jpg",
+  "description": "Whitepace is a polished, professional SaaS landing page designed for productivity and project management software products. The design employs a clean blue-and-white color scheme with subtle gradient accents that convey reliability and efficiency. The hero section features a dual-panel layout with a compelling value proposition headline on the left and a detailed product dashboard mockup on the right, demonstrating real product interface. Below the hero, a logo cloud section builds social proof by showcasing recognizable brand logos. The feature section uses an alternating layout pattern — image-left/text-right and vice versa — to walk users through key product capabilities with detailed explanations. Each feature block includes a small icon badge, headline, descriptive paragraph, and a 'Learn More' link. A dedicated 'Management' section highlights project timelines and workflow visualization with screenshot mockups. The pricing section presents three-tier comparison cards with a highlighted 'Most Popular' option, featuring checkmark lists for included features. Testimonials appear in a clean card layout with avatar, quote, name, and role. The design includes a stats bar with key metrics (users, downloads, countries, ratings), and a final CTA section before the footer. Whitespace is used generously throughout, creating an airy, uncluttered feel. The design uses rounded corners, subtle box shadows, and consistent spacing aligned to an 8px grid.",
+  "usage_tags": ["clean", "professional", "trust_building", "conversion_focused", "b2b_friendly", "minimal", "feature_rich"],
+  "primary_use_case": "Best for productivity and project management SaaS companies that need a trustworthy, feature-focused landing page that clearly communicates product value.",
+  "layout": {
+    "type": "single_page_scroll",
+    "sections": ["navigation", "hero_dashboard", "logo_cloud", "features_alternating", "management_overview", "pricing", "testimonials", "stats", "cta", "footer"]
+  },
+  "colors": {
+    "primary": "#4F46E5",
+    "accent": "#3B82F6",
+    "background": "#FFFFFF",
+    "text_primary": "#1E293B",
+    "text_secondary": "#64748B"
+  },
+  "typography": {
+    "heading_font": "Inter",
+    "body_font": "Inter",
+    "heading_weights": [600, 700],
+    "body_weight": 400
+  },
+  "components": ["navigation_bar", "hero_section", "logo_cloud", "feature_blocks", "dashboard_mockup", "pricing_cards", "testimonial_cards", "stats_bar", "cta_banner", "footer"],
+  "style_vibe": "Clean, professional, and trustworthy with a cool blue palette — a classic SaaS aesthetic designed to inspire confidence and clarity.",
+  "industry": ["saas", "productivity", "project_management", "technology", "b2b"]
+}

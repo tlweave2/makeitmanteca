@@ -1,0 +1,18 @@
+{
+  "id": "raycast",
+  "version": "v2",
+  "source": "inspiration_awwwards",
+  "title": "Raycast – Shortcut to Everything",
+  "category": "inspiration_awwwards",
+  "url": "https://raycast.com",
+  "screenshot": "designs/inspiration_awwwards/raycast.jpg",
+  "description": "Raycast is a developer productivity tool page with a macOS-native aesthetic. Uses a clean dark theme with vibrant accent colors including yellow, green, and purple. The hero section shows the actual app interface in action, with the command palette and search results visible. Feature sections use animated GIFs or short videos that demonstrate real workflows — searching, copying, extending functionality. A clean navigation grid shows available extensions. The page uses rounded window frames and system-consistent design patterns that feel native to macOS. The color palette is restrained dark gray with pops of bright color for interactive elements and highlights.",
+  "usage_tags": ["developer_focused", "dark_mode", "clean", "product_focused", "modern", "animated"],
+  "primary_use_case": "Live design inspiration for developer productivity tools and macOS apps needing a clean, interface-first marketing page with animated workflow demos.",
+  "layout": { "type": "single_page_scroll", "sections": ["hero_interface", "features_animated", "extensions", "testimonials", "download"] },
+  "colors": { "primary": "#1A1A2E", "accent": "#FFD60A", "background": "#0A0A0F", "text_primary": "#FFFFFF", "text_secondary": "#8B8FA3" },
+  "typography": { "heading_font": "Inter", "body_font": "Inter", "heading_weights": [500, 600, 700], "body_weight": 400 },
+  "components": ["hero_section", "animated_demos", "extension_grid", "testimonial_cards", "download_buttons", "footer"],
+  "style_vibe": "macOS-native dark theme with vibrant accent colors and animated workflow demonstrations — clean, developer-focused, and product-first.",
+  "industry": ["developer_tools", "productivity", "mac_app", "saas"]
+}

@@ -1,0 +1,18 @@
+{
+  "id": "framer",
+  "version": "v2",
+  "source": "inspiration_awwwards",
+  "title": "Framer – No Code Website Builder",
+  "category": "inspiration_awwwards",
+  "url": "https://framer.com",
+  "screenshot": "designs/inspiration_awwwards/framer.jpg",
+  "description": "Framer's live website is a visually stunning showcase of what the product itself can do. Uses massive typography with gradient text effects and animated UI elements showing real Framer components in action. Dynamic scroll-driven animations demonstrate the product capabilities in a meta way. The page toggles between dark and light modes, itself demonstrating Framer's theme-switching feature. Vibrant gradient palette with purple, pink, and blue transitions. Each section feels like a mini-demonstration of a different Framer capability.",
+  "usage_tags": ["bold", "animated", "gradient_heavy", "modern", "dogfooding", "creative"],
+  "primary_use_case": "Live design inspiration for web builder platforms or creative tools that want to dogfood their own product capabilities on their marketing page.",
+  "layout": { "type": "single_page_scroll", "sections": ["hero_animated", "showcase", "templates", "pricing", "examples"] },
+  "colors": { "primary": "#FFFFFF", "accent": "#7C3AED", "background": "#0A0A0A", "text_primary": "#FFFFFF", "text_secondary": "#A3A3A3" },
+  "typography": { "heading_font": "Inter", "body_font": "Inter", "heading_weights": [500, 600, 700], "body_weight": 400 },
+  "components": ["hero_section", "animated_showcase", "template_grid", "pricing_cards", "cta_section", "footer"],
+  "style_vibe": "Meta, bold, and animated — a page that dogfoods the product's own design capabilities in spectacular fashion.",
+  "industry": ["saas", "web_builder", "design", "no_code"]
+}
