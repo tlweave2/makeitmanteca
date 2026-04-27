@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Invest [City Name]</title>
+  <link href="_css/global.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("a").on('click', function(event) {
+        if (this.hash && location.pathname === this.pathname && location.hostname === this.hostname) {
+          event.preventDefault();
+          const hash = this.hash;
+          const target = $(hash);
+          if (target.length) {
+            $('html, body').animate({
+              scrollTop: target.offset().top
+            }, 800, function(){
+              window.location.hash = hash;
+            });
+          }
+        }
+      });
+    });
+  </script>
+</head>
+<body id="top">
+  <!-- NAVIGATION -->
+  <header id="navWrapper">
+    <div id="menu">☰</div>
+    <nav aria-label="main menu" id="nav" class="js">
+      <ul>
+        <li><a href="#projectElevate" title="Project Elevate">Project Elevate</a></li>
+        <li><a href="#why" title="Why [City Name]">Why [City Name]</a></li>
+        <li><a href="#services" title="Services">Services</a></li>
+        <li><a href="#news" title="News">News</a></li>
+        <li><a href="#contact" title="Contact">Contact</a></li>
+      </ul>
+    </nav>
+    <script>
+      $("#nav").addClass("js").before('<div id="menu">&#9776;</div>');
+      $("#menu").click(function(){ $("#nav").toggle(); });
+      $(window).resize(function(){
+        if(window.innerWidth > 768) { $("#nav").removeAttr("style"); }
+      });
+    </script>
+    <div class="floatBreaker"></div>
+  </header>
+
+  <!-- HERO -->
+  <main id="welcome">
+    <a href="index.php" id="ieg"><img src="_img/logo.svg" alt="Invest [City Name]"></a>
+  </main>
+  <div id="firstImage">
+    <h2>We're here to assist with your business start-up, expansion, and relocation needs.</h2>
+    <a href="mailto:econdev@city.gov" class="whiteButton">Connect With Us</a>
+  </div>
+
+  <!-- GET STARTED -->
+  <section id="letsGetStarted">
+    <h2 class="orange">Let's Get Started</h2>
+    <p>Our dedicated staff of economic development professionals is committed to providing you customized business assistance.</p>
+    <p class="center"><a href="mailto:econdev@city.gov" class="orangeButton">Schedule a Consultation</a></p>
+  </section>
+
+  <!-- PROJECT ELEVATE (custom project section) -->
+  <div id="projectElevate"><h2>Project Elevate</h2></div>
+  <section id="projectElevatePanel">
+    <p>Template section for major development project. Replace with city-specific project info.</p>
+    <p class="center"><a href="#" class="greenButton">Learn more</a></p>
+  </section>
+
+  <!-- WHY [CITY] -->
+  <div id="why">
+    <div id="whyWrapper">
+      <h2 class="blue">Why [City Name]</h2>
+      <p>City description goes here.</p>
+
+      <!-- Business Infographics (5 items: Ready, Talented, Fast, Close, Affordable) -->
+      <section id="lifestyle">
+        <h3>Business</h3>
+        <div class="lifestyleContainer">
+          <img src="_img/infographics/ready.png" alt="" aria-hidden="true">
+          <div><h5>Ready.</h5><h6>Headline here</h6><p>Description text.</p></div>
+        </div>
+        <div class="lifestyleContainer">
+          <img src="_img/infographics/talented.png" alt="" aria-hidden="true">
+          <div><h5>Talented.</h5><h6>Headline here</h6><p>Description text.</p></div>
+        </div>
+        <div class="lifestyleContainer">
+          <img src="_img/infographics/fast.png" alt="" aria-hidden="true">
+          <div><h5>Fast.</h5><h6>Headline here</h6><p>Description text.</p></div>
+        </div>
+        <div class="lifestyleContainer">
+          <img src="_img/infographics/close.png" alt="" aria-hidden="true">
+          <div><h5>Close.</h5><h6>Headline here</h6><p>Description text.</p></div>
+        </div>
+        <div class="lifestyleContainer">
+          <img src="_img/infographics/affordable.png" alt="" aria-hidden="true">
+          <div><h5>Affordable.</h5><h6>Headline here</h6><p>Description text.</p></div>
+        </div>
+
+        <h3>Lifestyle</h3>
+        <div class="lifestyleContainer">
+          <img src="_img/infographics/growing.png" alt="" aria-hidden="true">
+          <div><h5>Growing.</h5><h6>Headline here</h6><p>Description text.</p></div>
+        </div>
+        <div class="lifestyleContainer">
+          <img src="_img/infographics/prosperous.png" alt="" aria-hidden="true">
+          <div><h5>Prosperous.</h5><h6>Headline here</h6><p>Description text.</p></div>
+        </div>
+        <div class="lifestyleContainer">
+          <img src="_img/infographics/diverse.png" alt="" aria-hidden="true">
+          <div><h5>Diverse.</h5><h6>Headline here</h6><p>Description text.</p></div>
+        </div>
+        <div class="lifestyleContainer">
+          <img src="_img/infographics/active.png" alt="">
+          <div><h5>Active.</h5><h6>Headline here</h6><p>Description text.</p></div>
+        </div>
+        <div class="lifestyleContainer">
+          <img src="_img/infographics/connected.png" alt="" aria-hidden="true">
+          <div><h5>Connected.</h5><h6>Headline here</h6><p>Description text.</p></div>
+        </div>
+      </section>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div id="servicesWrapper">
+      <h2 class="green">Services</h2>
+      <div class="col"><h4>Tailored Solutions</h4><p>Description.</p></div>
+      <div class="col"><h4>Site Selection</h4><p>Description.</p></div>
+      <div class="col"><h4>Talent</h4><p>Description.</p></div>
+      <div class="col"><h4>Fast-Tracked Approvals</h4><p>Description.</p></div>
+      <div class="col"><h4>Small Business Support</h4><p>Description.</p></div>
+      <div class="col"><h4>Startups</h4><p>Description.</p></div>
+    </div>
+  </section>
+
+  <!-- INCENTIVES -->
+  <div id="incentives">
+    <h3>Incentives</h3>
+    <div class="col2"><h4>Program Name</h4><p>Description.</p><p><a href="#" class="greenButtonTiny">Guidelines</a></p></div>
+    <div class="col2"><h4>Program Name</h4><p>Description.</p><p><a href="#" class="greenButtonTiny">Guidelines</a></p></div>
+  </div>
+
+  <!-- NEWS -->
+  <section id="news">
+    <h2 class="orange">News</h2>
+    <p>Newsletter signup and latest updates go here.</p>
+  </section>
+
+  <!-- CONTACT / WHO WE ARE -->
+  <section id="contact">
+    <h2 class="blue">Who We Are</h2>
+    <p>Team profiles and contact info go here.</p>
+  </section>
+
+  <footer id="footer">
+    <p>&copy; [Year] [City Name]. All rights reserved.</p>
+  </footer>
+</body>
+</html>
