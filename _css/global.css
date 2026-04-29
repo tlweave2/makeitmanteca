@@ -322,7 +322,7 @@ nav ul li.twitter a span, nav ul li.linkedin a span {
   .VIpgJd-ZVi9od-l4eHX-hSRGPd, .VIpgJd-ZVi9od-l4eHX-hSRGPd:link, .VIpgJd-ZVi9od-l4eHX-hSRGPd:visited, .VIpgJd-ZVi9od-l4eHX-hSRGPd:hover, .VIpgJd-ZVi9od-l4eHX-hSRGPd:active {
     color: #fff !important;
   }
-#welcome, #whyelkgrove, #projectElevate, #news, #location, #firstImage, #photo2, #photo3, #photo4, #photo5 {
+#welcome, #whymanteca, #projectElevate, #news, #location, #firstImage, #photo2, #photo3, #photo4, #photo5 {
   position: relative;
   background-attachment: fixed;
   background-position: center;
@@ -341,7 +341,7 @@ nav ul li.twitter a span, nav ul li.linkedin a span {
 }
 #firstImage {
 /*  background-image: url("../_img/backgrounds/group-at-table.jpg");*/
-    background-image: url("../_img/backgrounds/macques-bbq.jpg");
+    background-image: url("../_img/1.jpg");
     background-position: center 30px !important;
   vertical-align: top !important;
   line-height: 1.2em;
@@ -382,7 +382,7 @@ video {
 }
 /* END BG VIDEO */
 #projectElevate {
-  background: url('../_img/backgrounds/project-elevate-rendering.jpg');
+  background: url('../_img/2.jpg');
   min-height: 100px;
   background-position: center center;
   background-size: cover;
@@ -405,23 +405,23 @@ video {
 }
 #photo2 {
 /*  background-image: url("../_img/backgrounds/elk-grove-coworking-space.jpg");*/
-    background-image: url("../_img/backgrounds/pitch-elk-grove.jpg");
+    background-image: url("../_img/3.jpg");
   min-height: 300px;
 }
 #photo3 {
-  background-image: url("../_img/backgrounds/longleaf-drive.jpg");
+  background-image: url("../_img/4.jpg");
   min-height: 300px;
 }
 #photo4 {
-  background-image: url("../_img/backgrounds/hands-signing.jpg");
+  background-image: url("../_img/5.jpg");
   min-height: 300px;
 }
 #photo5 {
-  background-image: url("../_img/backgrounds/man-smiling.jpg");
+  background-image: url("../_img/6.jpg");
   min-height: 300px;
 }
 #photo6 {
-  background-image: url("../_img/backgrounds/team-collaboration.jpg");
+  background-image: url("../_img/7.jpg");
   min-height: 300px;
 }
 #firstImage h2, #projectElevate h1, #photo2 h2, #photo3 h2, #photo4 h2, #photo5 h2 {
@@ -436,7 +436,8 @@ video {
   margin-bottom: 0;
   text-shadow: 2px 2px 5px #333;
 }
-#welcome #ieg {
+#welcome #ieg,
+#welcome #mim {
   width: 50%;
   text-align: center;
   display: block;
@@ -464,15 +465,15 @@ video {
   color: #999;
   line-height: 1.1em;
 }
-#whyelkgrove {
-  background-image: url("../_img/backgrounds/elk-grove-brewery.jpg");
+#whymanteca {
+  background-image: url("../_img/8.jpg");
   min-height: 400px;
   text-align: center;
 }
-#whyelkgrove #whyelkgroveWrapper p {
+#whymanteca #whymantecaWrapper p {
   text-align: left;
 }
-#whyelkgroveWrapper, #newsWrapper {
+#whymantecaWrapper, #newsWrapper {
   padding: 90px 70px;
   background-color: rgba(255, 255, 255, 0.9);
 }
@@ -657,7 +658,7 @@ p.intro {
   max-width: 800px;
   margin: -40px auto 60px;
 }
-#whyelkgroveWrapper h5 {
+#whymantecaWrapper h5 {
   font-size: 1.1em;
   /*color: #7A99AC;*/
   color: #587689;
@@ -716,13 +717,13 @@ p.intro {
   margin-bottom: 10px;
   font-size: 4.5em;
 }
-#whyelkgroveWrapper ul li ol {
+#whymantecaWrapper ul li ol {
   padding-left: 45px;
 }
-#whyelkgroveWrapper ul li ol li {
+#whymantecaWrapper ul li ol li {
   list-style: decimal;
 }
-#whyelkgrove .col img {
+#whymanteca .col img {
   max-width: 100%;
 }
 #news .col {
@@ -767,7 +768,7 @@ p.timeline-Tweet-text {
   font-size: .7em !important;
 }
 #news {
-  background-image: url("../_img/backgrounds/vats.html");
+  background-image: url("../_img/9.jpg");
   min-height: 400px;
 }
 #blog h2 {
@@ -788,7 +789,7 @@ p.timeline-Tweet-text {
   font-size: .95em;
 }
 #location {
-  background-image: url("../_img/backgrounds/exterior.html");
+  background-image: url("../_img/10.jpg");
   background-repeat: repeat !important;
   min-height: 600px;
   padding: 50px 70px;
@@ -1195,7 +1196,7 @@ input[type="submit"]:hover, .button:hover, .orangeButton:hover, .greenButton:hov
     padding: 90px 5px;
   }
   #projectElevate {
-    background: url('../_img/backgrounds/project-elevate-rendering.jpg') no-repeat left center;
+    background: url('../_img/2.jpg') no-repeat left center;
     background-size: cover;
     padding: 0 !important;
     padding-bottom: 400px !important;
@@ -1213,14 +1214,14 @@ input[type="submit"]:hover, .button:hover, .orangeButton:hover, .greenButton:hov
     width: 90% !important;
     margin: 0 auto;
   }
-  #whyelkgroveWrapper {
+  #whymantecaWrapper {
     padding: 90px 5px;
     text-align: center;
   }
-  #whyelkgroveWrapper p {
+  #whymantecaWrapper p {
     margin: 0 20px 30px;
   }
-  #whyelkgrove h6 {
+  #whymanteca h6 {
     margin-bottom: 10px;
   }
   #videoTestimonials {
