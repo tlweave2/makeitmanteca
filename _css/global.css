@@ -437,14 +437,14 @@ video {
 }
 #welcome #ieg,
 #welcome #mim {
-  width: 130px;
+  width: 100px;
   text-align: center;
   display: block;
   margin: 0 auto 10px;
   padding: 0 !important;
   z-index: 99;
   opacity: 1;
-  max-width: 130px;
+  max-width: 100px;
     border: none;
 }
 #welcome #mim img {
