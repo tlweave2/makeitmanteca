@@ -182,7 +182,7 @@ h3.subTitle { font-size: clamp(1.4rem, 3vw, 2rem); }
   .heroSplit .photoPanel { min-height: 210px; }
 }
 
-.heroBanner { background: var(--navy); padding: 46px 24px 50px; }
+.heroBanner { background: var(--navy); padding: 42px 24px; }
 .heroBanner p {
   max-width: 950px;
   margin: 0 auto;
@@ -192,7 +192,6 @@ h3.subTitle { font-size: clamp(1.4rem, 3vw, 2rem); }
   font-weight: 400;
   line-height: 1.4;
 }
-.heroBanner p.cta { margin-top: 1.5em; }
 
 /* ------------------------------------------------------ media + text row */
 .mediaRow {
