@@ -42,6 +42,40 @@ Tradeoff: takes ~10 minutes and needs someone with a manteca.gov Google account.
 
 To change where the notification email goes, edit `NOTIFY` in the script.
 
+### Which Google account should deploy it?
+
+Any Google account can run this — personal Gmail, a contractor's Workspace account, or a
+manteca.gov account. It will successfully email econdev@manteca.gov either way. But the
+account you pick has consequences:
+
+**The "From" address is the deploying account, and cannot be faked.** If a personal Gmail
+deploys it, inquiries arrive at econdev from that Gmail address rather than from the City.
+That looks like a phishing email — an outside personal address claiming to relay messages
+from the public — and it is more likely to land in spam. It can be fixed, but only by adding
+econdev@manteca.gov as a verified "Send mail as" alias in the deploying account, which
+requires someone with access to the econdev mailbox to click Google's verification link. At
+that point you may as well deploy from a City account.
+
+**The inquiry Sheet lives in whichever account owns it.** Messages from the public to a City
+department are very likely public records under the California Public Records Act. Keeping
+them in a vendor's or an individual's personal Drive puts them outside the City's retention
+and custody, and makes them awkward to produce on request.
+
+**Continuity.** If the owning account is closed, its password changes, or a contract ends,
+the form stops capturing and nobody finds out until someone notices the Sheet has gone quiet.
+Lead capture for the City's investor site should not depend on an individual's account.
+
+Recommended, in order:
+
+1. A **manteca.gov account** owns the Sheet and the deployment. Cleanest on all three counts.
+2. A **dedicated Google account created and owned by the City** specifically for this.
+3. **Formspree instead** (Option B) — no Google account or Drive custody question at all,
+   though it moves storage to a third party. A reasonable trade if getting a City-owned
+   Google account is the blocker.
+
+Deploying from a personal or contractor account is fine for a short-term test. It is not a
+good place to leave it.
+
 ---
 
 ## Option B — Formspree (fastest)
