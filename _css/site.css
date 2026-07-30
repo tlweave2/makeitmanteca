@@ -349,6 +349,7 @@ h1, h2, h3, h4, h5 {
   margin: 2.5em 0;
   text-align: center;
 }
+#fez .metricsBox--3 { grid-template-columns: repeat(3, 1fr); }
 @media (max-width: 760px) {
   #fez .statBand, #fez .metricsBox { grid-template-columns: repeat(2, 1fr); }
 }
