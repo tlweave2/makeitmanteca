@@ -418,17 +418,12 @@
       </div>
       <div>
         <!--
-          EDITOR NOTE — NO FORM BACKEND. This does not submit anywhere; there is no server to
-          receive it (GitHub Pages is static hosting). The previous version used
-          action="mailto:" method="post", which browsers handle badly — Chrome commonly does
-          nothing at all, and no copy is stored anywhere, so inquiries were being lost silently.
-
-          Now it composes a pre-filled email in the visitor's own mail client on submit, which
-          is reliable but still requires them to press send. To capture inquiries properly,
-          point this at a real endpoint (Formspree, Netlify Forms, or the City's mail relay)
-          and delete the JS handler at the bottom of this file.
+          TO TURN ON REAL SUBMISSIONS: set FORM_ENDPOINT near the bottom of this file to your
+          endpoint URL. Until it is set, the form falls back to opening a pre-filled message in
+          the visitor's mail client (works, but needs them to press send, and nothing is logged).
+          Setup instructions for both supported options: _docs/contact-form-setup.md
         -->
-        <form id="inquiryForm" novalidate="false">
+        <form id="inquiryForm">
           <div class="row2">
             <div>
               <label for="cf-name">Name</label>
@@ -453,8 +448,14 @@
             <label for="cf-message">Message</label>
             <textarea id="cf-message" name="Message" rows="4"></textarea>
           </div>
-          <button type="submit" class="btn btn--light">Send Inquiry</button>
-          <p class="formNote">This opens a pre-filled message in your email app. Prefer to write to us directly? <a href="mailto:econdev@manteca.gov" style="color:rgba(255,255,255,0.85)">econdev@manteca.gov</a></p>
+          <!-- honeypot: bots fill this, humans never see it. Submissions with it set are dropped. -->
+          <div class="hp" aria-hidden="true">
+            <label for="cf-website">Website</label>
+            <input type="text" id="cf-website" name="Website" tabindex="-1" autocomplete="off">
+          </div>
+          <button type="submit" class="btn btn--light" id="cf-submit">Send Inquiry</button>
+          <p class="formStatus" id="cf-status" role="status" aria-live="polite" hidden></p>
+          <p class="formNote">Prefer to write to us directly? <a href="mailto:econdev@manteca.gov" style="color:rgba(255,255,255,0.85)">econdev@manteca.gov</a></p>
         </form>
       </div>
     </div>
@@ -487,34 +488,82 @@
   });
 })();
 
-/*
-  Inquiry form -> pre-filled email. Stopgap until a real form endpoint exists; see the
-  EDITOR NOTE on the form above. Navigating to a mailto: URL is handled consistently by
-  browsers, unlike posting a form to one.
+/* ---------------------------------------------------------------- inquiry form
+
+   SET THIS to start capturing inquiries for real. Both supported options are
+   documented in _docs/contact-form-setup.md:
+
+     Formspree        'https://formspree.io/f/xxxxxxxx'
+     Apps Script      'https://script.google.com/macros/s/AKfy.../exec'
+
+   Leave it empty and the form falls back to opening a pre-filled message in the
+   visitor's mail client — that works, but nothing is logged and they must press send.
 */
+var FORM_ENDPOINT = '';
+var INQUIRY_TO = 'econdev@manteca.gov';
+
 (function () {
   var form = document.getElementById('inquiryForm');
   if (!form) return;
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-    var val = function (id) {
-      var el = document.getElementById(id);
-      return el && el.value ? el.value.trim() : '';
+  var btn = document.getElementById('cf-submit');
+  var status = document.getElementById('cf-status');
+
+  function val(id) {
+    var el = document.getElementById(id);
+    return el && el.value ? el.value.trim() : '';
+  }
+  function say(msg, kind) {
+    status.hidden = false;
+    status.textContent = msg;
+    status.className = 'formStatus' + (kind ? ' formStatus--' + kind : '');
+  }
+  function fields() {
+    return {
+      Name: val('cf-name'),
+      Company: val('cf-company'),
+      Email: val('cf-email'),
+      Phone: val('cf-phone'),
+      Message: val('cf-message')
     };
-    var name = val('cf-name'), company = val('cf-company');
-    var email = val('cf-email'), phone = val('cf-phone'), message = val('cf-message');
-    var subject = 'makeitmanteca.com inquiry' + (company ? ' — ' + company : '');
-    var body = [
-      'Name: ' + name,
-      'Company: ' + company,
-      'Email: ' + email,
-      'Phone: ' + phone,
-      '',
-      message
-    ].join('\n');
-    window.location.href = 'mailto:econdev@manteca.gov'
+  }
+  function mailtoFallback(f) {
+    var subject = 'makeitmanteca.com inquiry' + (f.Company ? ' — ' + f.Company : '');
+    var body = ['Name: ' + f.Name, 'Company: ' + f.Company, 'Email: ' + f.Email,
+                'Phone: ' + f.Phone, '', f.Message].join('\n');
+    window.location.href = 'mailto:' + INQUIRY_TO
       + '?subject=' + encodeURIComponent(subject)
       + '&body=' + encodeURIComponent(body);
+  }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    if (!form.reportValidity()) return;
+    if (val('cf-website')) return;           // honeypot tripped — silently drop
+    var f = fields();
+
+    if (!FORM_ENDPOINT) { mailtoFallback(f); return; }
+
+    // urlencoded + Accept keeps this a "simple" CORS request, so no preflight is
+    // needed. Formspree and Apps Script both read this shape.
+    var body = new URLSearchParams();
+    Object.keys(f).forEach(function (k) { body.append(k, f[k]); });
+
+    btn.disabled = true;
+    say('Sending…');
+    fetch(FORM_ENDPOINT, {
+      method: 'POST',
+      headers: { 'Accept': 'application/json' },
+      body: body
+    }).then(function (res) {
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      form.reset();
+      say('Thank you — your inquiry is on its way. We will be in touch shortly.', 'ok');
+    }).catch(function () {
+      say('That did not go through. Opening your email app instead…', 'err');
+      setTimeout(function () { mailtoFallback(f); }, 1200);
+    }).then(function () {
+      btn.disabled = false;
+    });
   });
 })();
 </script>
