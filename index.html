@@ -407,56 +407,41 @@
     </div>
   </section>
 
+  <!--
+    No contact form by design. This is a static site with no backend, so a form would either
+    post nowhere or depend on a third-party endpoint / an individual's Google account that
+    nobody owns long-term — and a form that quietly loses inquiries is worse than no form.
+    Direct email and phone also suit the audience here (brokers, developers, site selectors).
+    If a form is ever wanted, the endpoint wiring and a ready-to-deploy Google Apps Script
+    handler are in this repo's history — see the commits around _docs/contact-form-setup.md.
+  -->
   <section id="contact" class="section" aria-labelledby="contactHeading">
     <h2 id="contactHeading" class="sectionTitle center">Contact Us</h2>
-    <div class="contactGrid">
-      <div class="details">
-        <p><span class="label">Key Contact</span>Vanessa Carrera<br>Deputy Director, Economic Development<br>City of Manteca &mdash; City Manager's Office<br>(209) 456-8016</p>
-        <p><span class="label">Email</span><a href="mailto:econdev@manteca.gov">econdev@manteca.gov</a></p>
-        <p><span class="label">Mailing Address</span>1001 W. Center Street<br>Manteca, CA 95337</p>
-        <p><span class="label">Social</span><a href="https://www.linkedin.com/company/manteca-office-of-economic-development">LinkedIn — Manteca Office of Economic Development</a></p>
+    <p class="contactLead">Tell us about your project and we'll get you the sites, numbers, and approvals path you need. Every inquiry reaches our team directly.</p>
+
+    <p class="center" style="margin-bottom:3.2em;">
+      <a class="btn btn--light" href="mailto:econdev@manteca.gov?subject=makeitmanteca.com%20inquiry">Email econdev@manteca.gov</a>
+    </p>
+
+    <div class="contactCols">
+      <div>
+        <span class="label">Key Contact</span>
+        Vanessa Carrera<br>
+        Deputy Director, Economic Development<br>
+        City of Manteca &mdash; City Manager's Office
       </div>
       <div>
-        <!--
-          TO TURN ON REAL SUBMISSIONS: set FORM_ENDPOINT near the bottom of this file to your
-          endpoint URL. Until it is set, the form falls back to opening a pre-filled message in
-          the visitor's mail client (works, but needs them to press send, and nothing is logged).
-          Setup instructions for both supported options: _docs/contact-form-setup.md
-        -->
-        <form id="inquiryForm">
-          <div class="row2">
-            <div>
-              <label for="cf-name">Name</label>
-              <input type="text" id="cf-name" name="Name" required>
-            </div>
-            <div>
-              <label for="cf-company">Company</label>
-              <input type="text" id="cf-company" name="Company">
-            </div>
-          </div>
-          <div class="row2">
-            <div>
-              <label for="cf-email">Email</label>
-              <input type="email" id="cf-email" name="Email" required>
-            </div>
-            <div>
-              <label for="cf-phone">Phone</label>
-              <input type="tel" id="cf-phone" name="Phone">
-            </div>
-          </div>
-          <div>
-            <label for="cf-message">Message</label>
-            <textarea id="cf-message" name="Message" rows="4"></textarea>
-          </div>
-          <!-- honeypot: bots fill this, humans never see it. Submissions with it set are dropped. -->
-          <div class="hp" aria-hidden="true">
-            <label for="cf-website">Website</label>
-            <input type="text" id="cf-website" name="Website" tabindex="-1" autocomplete="off">
-          </div>
-          <button type="submit" class="btn btn--light" id="cf-submit">Send Inquiry</button>
-          <p class="formStatus" id="cf-status" role="status" aria-live="polite" hidden></p>
-          <p class="formNote">Prefer to write to us directly? <a href="mailto:econdev@manteca.gov" style="color:rgba(255,255,255,0.85)">econdev@manteca.gov</a></p>
-        </form>
+        <span class="label">Phone</span>
+        <a href="tel:+12094568016">(209) 456-8016</a>
+      </div>
+      <div>
+        <span class="label">Mailing Address</span>
+        1001 W. Center Street<br>
+        Manteca, CA 95337
+      </div>
+      <div>
+        <span class="label">Connect</span>
+        <a href="https://www.linkedin.com/company/manteca-office-of-economic-development">LinkedIn — Manteca Office of<br>Economic Development</a>
       </div>
     </div>
   </section>
@@ -488,84 +473,6 @@
   });
 })();
 
-/* ---------------------------------------------------------------- inquiry form
-
-   SET THIS to start capturing inquiries for real. Both supported options are
-   documented in _docs/contact-form-setup.md:
-
-     Formspree        'https://formspree.io/f/xxxxxxxx'
-     Apps Script      'https://script.google.com/macros/s/AKfy.../exec'
-
-   Leave it empty and the form falls back to opening a pre-filled message in the
-   visitor's mail client — that works, but nothing is logged and they must press send.
-*/
-var FORM_ENDPOINT = '';
-var INQUIRY_TO = 'econdev@manteca.gov';
-
-(function () {
-  var form = document.getElementById('inquiryForm');
-  if (!form) return;
-  var btn = document.getElementById('cf-submit');
-  var status = document.getElementById('cf-status');
-
-  function val(id) {
-    var el = document.getElementById(id);
-    return el && el.value ? el.value.trim() : '';
-  }
-  function say(msg, kind) {
-    status.hidden = false;
-    status.textContent = msg;
-    status.className = 'formStatus' + (kind ? ' formStatus--' + kind : '');
-  }
-  function fields() {
-    return {
-      Name: val('cf-name'),
-      Company: val('cf-company'),
-      Email: val('cf-email'),
-      Phone: val('cf-phone'),
-      Message: val('cf-message')
-    };
-  }
-  function mailtoFallback(f) {
-    var subject = 'makeitmanteca.com inquiry' + (f.Company ? ' — ' + f.Company : '');
-    var body = ['Name: ' + f.Name, 'Company: ' + f.Company, 'Email: ' + f.Email,
-                'Phone: ' + f.Phone, '', f.Message].join('\n');
-    window.location.href = 'mailto:' + INQUIRY_TO
-      + '?subject=' + encodeURIComponent(subject)
-      + '&body=' + encodeURIComponent(body);
-  }
-
-  form.addEventListener('submit', function (e) {
-    e.preventDefault();
-    if (!form.reportValidity()) return;
-    if (val('cf-website')) return;           // honeypot tripped — silently drop
-    var f = fields();
-
-    if (!FORM_ENDPOINT) { mailtoFallback(f); return; }
-
-    // urlencoded + Accept keeps this a "simple" CORS request, so no preflight is
-    // needed. Formspree and Apps Script both read this shape.
-    var body = new URLSearchParams();
-    Object.keys(f).forEach(function (k) { body.append(k, f[k]); });
-
-    btn.disabled = true;
-    say('Sending…');
-    fetch(FORM_ENDPOINT, {
-      method: 'POST',
-      headers: { 'Accept': 'application/json' },
-      body: body
-    }).then(function (res) {
-      if (!res.ok) throw new Error('HTTP ' + res.status);
-      form.reset();
-      say('Thank you — your inquiry is on its way. We will be in touch shortly.', 'ok');
-    }).catch(function () {
-      say('That did not go through. Opening your email app instead…', 'err');
-      setTimeout(function () { mailtoFallback(f); }, 1200);
-    }).then(function () {
-      btn.disabled = false;
-    });
-  });
-})();
 </script>
 </body>
 </html>
