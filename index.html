@@ -60,11 +60,15 @@
       </div>
       <div class="photoPanel" style="background-image:url('_img/draft/hero-downtown.jpg')" role="img" aria-label="Downtown Manteca streetscape on Main Street"></div>
     </div>
+    <!--
+      The draft floated a small outlined "Start Here" button alone on white below this banner.
+      Merged into the navy band instead: the statement and its call to action read as one unit,
+      and a solid white button actually has contrast here (crimson on navy does not — both are
+      dark, roughly 2:1).
+    -->
     <div class="heroBanner">
       <p>The Economic Development Division provides direct economic development assistance and referral services to existing firms, incoming businesses, commercial property owners, real estate brokers, developers, and investors.</p>
-    </div>
-    <div class="startHere">
-      <a class="btn" href="#about">Start Here</a>
+      <p class="cta"><a class="btn btn--light" href="#about">Start Here</a></p>
     </div>
   </section>
 
@@ -413,7 +417,18 @@
         <p><span class="label">Social</span><a href="https://www.linkedin.com/company/manteca-office-of-economic-development">LinkedIn — Manteca Office of Economic Development</a></p>
       </div>
       <div>
-        <form id="inquiryForm" action="mailto:econdev@manteca.gov" method="post" enctype="text/plain">
+        <!--
+          EDITOR NOTE — NO FORM BACKEND. This does not submit anywhere; there is no server to
+          receive it (GitHub Pages is static hosting). The previous version used
+          action="mailto:" method="post", which browsers handle badly — Chrome commonly does
+          nothing at all, and no copy is stored anywhere, so inquiries were being lost silently.
+
+          Now it composes a pre-filled email in the visitor's own mail client on submit, which
+          is reliable but still requires them to press send. To capture inquiries properly,
+          point this at a real endpoint (Formspree, Netlify Forms, or the City's mail relay)
+          and delete the JS handler at the bottom of this file.
+        -->
+        <form id="inquiryForm" novalidate="false">
           <div class="row2">
             <div>
               <label for="cf-name">Name</label>
@@ -438,8 +453,8 @@
             <label for="cf-message">Message</label>
             <textarea id="cf-message" name="Message" rows="4"></textarea>
           </div>
-          <button type="submit" class="btn btn--onDark">Send Inquiry</button>
-          <p class="formNote">Prefer email? Reach us directly at <a href="mailto:econdev@manteca.gov" style="color:rgba(255,255,255,0.85)">econdev@manteca.gov</a>.</p>
+          <button type="submit" class="btn btn--light">Send Inquiry</button>
+          <p class="formNote">This opens a pre-filled message in your email app. Prefer to write to us directly? <a href="mailto:econdev@manteca.gov" style="color:rgba(255,255,255,0.85)">econdev@manteca.gov</a></p>
         </form>
       </div>
     </div>
@@ -469,6 +484,37 @@
       nav.classList.remove('open');
       toggle.setAttribute('aria-expanded', 'false');
     });
+  });
+})();
+
+/*
+  Inquiry form -> pre-filled email. Stopgap until a real form endpoint exists; see the
+  EDITOR NOTE on the form above. Navigating to a mailto: URL is handled consistently by
+  browsers, unlike posting a form to one.
+*/
+(function () {
+  var form = document.getElementById('inquiryForm');
+  if (!form) return;
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var val = function (id) {
+      var el = document.getElementById(id);
+      return el && el.value ? el.value.trim() : '';
+    };
+    var name = val('cf-name'), company = val('cf-company');
+    var email = val('cf-email'), phone = val('cf-phone'), message = val('cf-message');
+    var subject = 'makeitmanteca.com inquiry' + (company ? ' — ' + company : '');
+    var body = [
+      'Name: ' + name,
+      'Company: ' + company,
+      'Email: ' + email,
+      'Phone: ' + phone,
+      '',
+      message
+    ].join('\n');
+    window.location.href = 'mailto:econdev@manteca.gov'
+      + '?subject=' + encodeURIComponent(subject)
+      + '&body=' + encodeURIComponent(body);
   });
 })();
 </script>
