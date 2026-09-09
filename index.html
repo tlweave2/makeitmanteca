@@ -4,38 +4,50 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
 <title>Make It Manteca | City of Manteca Office of Economic Development</title>
-<meta name="description" content="Manteca, CA is a fast-growing city in the heart of California — strategic location, growing workforce, and the 120+ acre Family Entertainment Zone (FEZ), open for development partners.">
+<meta name="description" content="Make it your next move. Manteca, CA is one of California's fastest-growing cities — on HWY 120 between I-5 and HWY 99, approaching 100,000 residents, and home to the Family Entertainment Zone.">
 <link rel="canonical" href="https://makeitmanteca.com/">
 
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="Make It Manteca | City of Manteca Office of Economic Development">
-<meta property="og:description" content="Strategic location, a growing workforce, and the 120+ acre Family Entertainment Zone (FEZ). Discover why developers and investors are choosing Manteca, CA.">
+<meta property="og:description" content="Whether you're starting a business, expanding, relocating, or investing — our Economic Development team is here to help turn your next opportunity into reality.">
 <meta property="og:url" content="https://makeitmanteca.com/">
 <meta property="og:image" content="https://makeitmanteca.com/_img/draft/hero-downtown.jpg">
+<meta name="twitter:card" content="summary_large_image">
 
+<link rel="icon" href="_img/city-seal.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 <link href="_css/site.css" rel="stylesheet" type="text/css">
 </head>
-<body>
+<body id="top">
 <a href="#main" class="skip-link">Skip to main content</a>
 
 <!--
-  CONTENT + DESIGN SOURCE: the client's Canva draft ("Make it Manteca", City of Manteca,
-  July 2026). Section order, copy, palette (navy #0c0f38 / crimson #8b1732), type, and
-  imagery all follow that export. Logos, headshots, stat icons, the FEZ hero and the
-  downtown hero were extracted from the draft PDF itself.
+  CONTENT + DESIGN SOURCE: the client's Canva design "Make it Manteca" (City of Manteca,
+  design DAHO6cmKkDc, 6 pages, last updated Sept 2026). Section order, copy, palette
+  (black / logo red #e02e2e on white), type and imagery all follow that design.
+
+  Two hero treatments appear in the design (pages 1 and 2). Page 2 is built here: the
+  logo lockup beside a photo strip, with the headline carried by the black banner. Page 1
+  puts the headline in the hero AND repeats it verbatim in the banner directly below it;
+  page 2 resolves that duplication. To switch to page 1's version, see the commented-out
+  block in the hero.
 
   Open items the client still owes are marked EDITOR NOTE inline.
 -->
 
 <header id="siteHeader">
   <div class="inner">
-    <button id="navToggle" aria-expanded="false" aria-controls="nav">&#9776;<span class="visually-hidden">Menu</span></button>
+    <a class="headerLogo" href="#top" aria-label="Make It Manteca — home">
+      <img src="_img/makeit-logo-trimmed.png" alt="Make It Manteca">
+    </a>
+    <button id="navToggle" aria-expanded="false" aria-controls="nav">
+      <span class="bars" aria-hidden="true"></span><span class="visually-hidden">Menu</span>
+    </button>
     <!--
-      EDITOR NOTE: the draft's nav had an unlabeled placeholder item ("holder") between
+      EDITOR NOTE: the design's nav has an unlabeled placeholder item ("holder") between
       Resources and Contact Us. Omitted until the client supplies a real label.
     -->
     <nav id="nav" aria-label="Main">
@@ -54,122 +66,196 @@
 <main id="main">
 
   <section id="hero" aria-label="Introduction">
-    <div class="heroSplit">
-      <div class="logoPanel">
+
+    <div class="heroTop">
+      <div class="heroLogo">
         <img src="_img/mim-logo.png" alt="Make It Manteca">
       </div>
-      <div class="photoPanel" style="background-image:url('_img/draft/hero-downtown.jpg')" role="img" aria-label="Downtown Manteca streetscape on Main Street"></div>
+      <div class="heroStrip" aria-hidden="true">
+        <img src="_img/4.jpg" alt="" loading="eager" decoding="async">
+        <img src="_img/9.jpg" alt="" loading="eager" decoding="async">
+        <img src="_img/1.jpg" alt="" loading="eager" decoding="async">
+        <img src="_img/7.jpg" alt="" loading="eager" decoding="async">
+      </div>
     </div>
+
     <!--
-      The draft's "Start Here" button was dropped. It only jumped to About Us — the very next
-      section, already on screen — so it read as a call to action while doing nothing. The nav
-      covers navigation, and the real CTAs (Explore Development Opportunities, the incentive
-      Inquire buttons, Email econdev) sit next to the content they relate to.
+      Page 1 of the design instead places the headline here, on white, beside the logo:
+        <div class="heroHeadline"><h1>Make it Your next Move.<br><em>Make It Manteca.</em></h1></div>
+      It is left out because the black banner immediately below already carries that exact
+      headline. Restore it here (and drop the <h1> from the banner) to build page 1's version.
     -->
+
     <div class="heroBanner">
-      <p>The Economic Development Division provides direct economic development assistance and referral services to existing firms, incoming businesses, commercial property owners, real estate brokers, developers, and investors.</p>
+      <div class="inner">
+        <h1>Make it Your next Move. <em>Make It Manteca.</em></h1>
+        <p>Whether you're starting a business, expanding, relocating, or investing, our Economic
+           Development team is here to help turn your next opportunity into reality.
+           You've found Manteca. Now let us help you make it here.</p>
+      </div>
+    </div>
+
+    <div class="photoBand" aria-hidden="true">
+      <img src="_img/3.jpg" alt="" loading="lazy" decoding="async">
+      <img src="_img/1.jpg" alt="" loading="lazy" decoding="async">
+      <img src="_img/4.jpg" alt="" loading="lazy" decoding="async">
+      <img src="_img/11.jpg" alt="" loading="lazy" decoding="async">
+      <img src="_img/6.jpg" alt="" loading="lazy" decoding="async">
+      <img src="_img/9.jpg" alt="" loading="lazy" decoding="async">
     </div>
   </section>
 
   <section id="about" class="section" aria-labelledby="aboutHeading">
-    <h2 id="aboutHeading" class="sectionTitle">About Us</h2>
-    <p class="lede">In the heart of California, Manteca is alive with opportunities. This family-friendly city, San Joaquin County's third largest, is quickly approaching 100,000 residents and is one of the state's fastest growing cities. Manteca is thriving on multiple fronts with key infrastructure, commercial, residential, and recreational developments.</p>
+    <h2 id="aboutHeading" class="sectionTitle center">Manteca: Growing, Connected,<br>and Full of Opportunity</h2>
 
-    <div class="mediaRow">
-      <div class="videoWrap">
-        <iframe src="https://www.youtube.com/embed/uyurfajkfyM" title="City of Manteca Overview: Commercial and Experiential Retail" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+    <div class="splitRow">
+      <div>
+        <p class="lede">As one of California's fastest-growing cities, Manteca is quickly approaching
+          100,000 residents and continues to attract new families, businesses, investment, and development.</p>
+        <p>Location is one of Manteca's greatest advantages. Positioned along Highway 120 between
+          Interstate 5 and Highway 99, businesses have direct access to some of California's most
+          important transportation corridors and a regional customer base that extends well beyond
+          city limits.</p>
       </div>
-      <p>Manteca's "Open for Business" culture, along with our growing workforce and strategic location, provide the optimal environment for new and expanding businesses. Located along HWY 120 between Interstate 5 and HWY 99, Manteca is in the heart of California. Situated approximately 75 miles east of San Francisco, 60 miles south of Sacramento, and 90 miles west of Yosemite National Park, residents can relish in the beauty of the California coast, scenic mountains, and award-winning wineries every weekend.</p>
+      <figure class="mapFigure">
+        <!--
+          The design's locator map is flattened artwork in the Canva file and could not be
+          extracted, so it is redrawn as SVG in _img/manteca-location-map.svg. State outlines
+          come from public simplified US-state geometry; every marker sits at its true lat/lon
+          and every distance is the one printed in the design. Regenerate it with
+          `python3 _tools/gen-location-map.py` if the callouts change.
+        -->
+        <img src="_img/manteca-location-map.svg" width="520" height="661"
+             alt="Map of Northern and Central California: Manteca sits on Highway 120 between Interstate 5 and Highway 99 — 75 miles from San Jose and Silicon Valley, 76 from the Port of Oakland, 59 from Lake Tahoe, 111 from Fresno, 188 from Reno, 221 from Redding and 330 from Los Angeles, with the SMF, SFO, OAK, SJC and SCK airports nearby."
+             loading="lazy" decoding="async">
+      </figure>
     </div>
 
-    <p>Economic Development is a Division of Administration and is housed in the City Manager's Office. All programs of the department are managed by the Economic Development Manager, who is assisted by City Analysts. The division is responsible for several areas including the following: Business Retention and Expansion, Economic Development Assistance, Visitor and Tourism Services, Real Estate Service, and City Marketing and Promotion.</p>
-
-    <h3 class="subTitle" style="margin-top:2.6em;">Meet the Team</h3>
-    <!--
-      EDITOR NOTE: the draft asks "Add Toni?" beside these two cards — an open question about
-      adding a third card for Toni Lundgren. Left at two until the client confirms.
-    -->
-    <div class="teamGrid">
-      <div class="teamCard">
-        <img src="_img/team/vanessa-carrera.jpg" alt="Vanessa Carrera">
-        <h4>Vanessa Carrera</h4>
-        <p>Deputy Director of<br>Economic Development</p>
-      </div>
-      <div class="teamCard">
-        <img src="_img/team/joseph-viorge-koide.jpg" alt="Joseph Viorge-Koide">
-        <h4>Joseph Viorge-Koide</h4>
-        <p>Senior Economic<br>Development Analyst</p>
-      </div>
+    <div class="collage" aria-hidden="true">
+      <img src="_img/2.jpg" alt="" loading="lazy" decoding="async">
+      <img src="_img/10.jpg" alt="" loading="lazy" decoding="async">
+      <img src="_img/5.jpg" alt="" loading="lazy" decoding="async">
+      <img src="_img/8.jpg" alt="" loading="lazy" decoding="async">
     </div>
 
-    <h3 class="subTitle" style="margin-top:3em;">Our Leadership</h3>
+    <div class="proseCols">
+      <p>Manteca residents are looking for more places to shop, dine, gather, play, and spend time.
+         Our growing population includes families and residents relocating from larger markets who
+         are bringing demand for greater variety&mdash;from specialty grocery and dining to
+         entertainment, experiences, and brands that are new to the community.</p>
+      <p>Manteca is a regional destination. Attractions such as Great Wolf Lodge, Big League Dreams,
+         Bass Pro Shops, and a growing collection of sports, entertainment, retail, and hospitality
+         uses bring visitors from throughout the region, expanding the market beyond our resident
+         population.</p>
+      <p>And we're not waiting for opportunity to find us. We're actively building relationships,
+         promoting development opportunities, and pursuing the businesses, amenities, and investment
+         our community wants.</p>
+    </div>
+
     <!--
-      EDITOR NOTE: role-only by design. Research surfaced likely current officeholders
-      (Mayor Gary Singh; Vice Mayor Regina Lackey, District 2; Councilmember Mike Morowit,
-      District 4) but council composition changes and the draft left all five unlabeled —
-      confirm names and headshots with the City Clerk before publishing them.
+      Kept from the previous build of this site: the City's general overview video. The design
+      does not place a video in this section, but this is real published content and it fits
+      the section's subject, so it is retained rather than dropped.
     -->
-    <div class="leadershipRow">
-      <div class="leaderCard"><div class="avatar"></div><h4>Mayor</h4><p>Name &amp; photo pending</p></div>
-      <div class="leaderCard"><div class="avatar"></div><h4>Council Member</h4><p>Name &amp; photo pending</p></div>
-      <div class="leaderCard"><div class="avatar"></div><h4>Council Member</h4><p>Name &amp; photo pending</p></div>
-      <div class="leaderCard"><div class="avatar"></div><h4>Council Member</h4><p>Name &amp; photo pending</p></div>
-      <div class="leaderCard"><div class="avatar"></div><h4>Council Member</h4><p>Name &amp; photo pending</p></div>
+    <div class="videoWrap videoWrap--wide">
+      <iframe src="https://www.youtube-nocookie.com/embed/uyurfajkfyM"
+        title="City of Manteca Overview: Commercial and Experiential Retail"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen loading="lazy"></iframe>
     </div>
   </section>
 
-  <section id="whyManteca" class="section" aria-labelledby="whyMantecaHeading">
-    <h2 id="whyMantecaHeading" class="sectionTitle">Why Manteca</h2>
-    <p class="lede">Economic growth and prosperity are evident throughout the region. Located within 10 miles and 65 miles from the Ports of Stockton and Oakland respectively, and within 78 miles of four international airports, Manteca is helping drive job growth in San Joaquin County, providing manufacturers and distributors a central location for their operations. With a growth rate of 24.4% between 2010&ndash;2020, and more than 12,000 single and multi-family housing units in our residential pipeline, Manteca is ready to provide the workforce these expanding industries' needs.</p>
-
-    <div class="mediaRow">
-      <div class="videoWrap">
-        <iframe src="https://www.youtube.com/embed/FROXGKClHnk" title="Make It Manteca" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
-      </div>
-      <div>
-        <!--
-          EDITOR NOTE: the draft printed the "Family City / 11,000 entitled lots" paragraph
-          twice in this section — here and again verbatim in the third feature row below.
-          Kept once, in the feature row.
-        -->
-        <p>Community amenities include Bass Pro Shops, major retail centers, new restaurants, Big League Dreams Sports Park, quality schools and a 50-acre community park. ACE Commuter rail provides convenient access for traveling to and from Silicon Valley and the Bay Area, with full Wi-Fi internet access along the way.</p>
+  <section id="momentum" aria-labelledby="momentumHeading">
+    <div class="section">
+      <h2 id="momentumHeading" class="sectionTitle center">Momentum You Can See</h2>
+      <!--
+        EDITOR NOTE: the design names four videos. Two are published and wired up below.
+        The M1 and Downtown Specific Plan videos are named in the design but no URL was
+        supplied — they render as labelled placeholders. Drop the YouTube ID into the
+        data-video attribute and swap the placeholder for an <iframe> when they land.
+      -->
+      <div class="videoGrid">
+        <div class="videoCard">
+          <div class="videoWrap">
+            <iframe src="https://www.youtube-nocookie.com/embed/FROXGKClHnk"
+              title="Make It Manteca"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen loading="lazy"></iframe>
+          </div>
+          <h3>Make It Manteca</h3>
+        </div>
+        <div class="videoCard">
+          <div class="videoWrap">
+            <iframe src="https://www.youtube-nocookie.com/embed/xxdtJeF1AtQ"
+              title="The FEZ — Manteca's Family Entertainment Zone"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen loading="lazy"></iframe>
+          </div>
+          <h3>FEZ Video</h3>
+        </div>
+        <div class="videoCard">
+          <div class="videoWrap videoWrap--pending" data-video=""><span>Video coming soon</span></div>
+          <h3>M1 Video</h3>
+        </div>
+        <div class="videoCard">
+          <div class="videoWrap videoWrap--pending" data-video=""><span>Video coming soon</span></div>
+          <h3>Downtown Specific Plan Video</h3>
+        </div>
       </div>
     </div>
+  </section>
 
+  <section id="whyManteca" class="section" aria-labelledby="communityHeading">
+    <h2 id="communityHeading" class="sectionTitle center">Our Community</h2>
+
+    <!--
+      EDITOR NOTE: the design shows six circular tiles, but two of them print the same stat
+      ("Located near 4 international airports") — a copy/paste duplicate. The five distinct
+      stats are shown here.
+
+      EDITOR NOTE: the design fills each circle with a photograph. Those photos are flattened
+      into the Canva page and could not be extracted, so the circles use the brand icon art
+      pulled from the earlier draft. Swap in real photography when it is supplied.
+    -->
     <div class="statRow">
       <div class="statTile">
-        <img src="_img/icons/population.png" alt="" aria-hidden="true">
+        <span class="disc"><img src="_img/icons/population.png" alt="" aria-hidden="true"></span>
         <span class="label">Population</span>
         <span class="figure">98,000</span>
       </div>
       <div class="statTile">
-        <img src="_img/icons/degree.png" alt="" aria-hidden="true">
+        <span class="disc"><img src="_img/icons/parks.png" alt="" aria-hidden="true"></span>
+        <span class="label">527 Active<br>Park Acres</span>
+      </div>
+      <div class="statTile">
+        <span class="disc"><img src="_img/icons/degree.png" alt="" aria-hidden="true"></span>
         <span class="label">Degree Completion</span>
         <span class="figure">30.9%</span>
       </div>
       <div class="statTile">
-        <img src="_img/icons/parks.png" alt="" aria-hidden="true">
-        <span class="label">527 Active<br>Park Acres</span>
-      </div>
-      <div class="statTile">
-        <!-- the draft's bar-chart mark is vector art in Canva; redrawn here in brand crimson -->
-        <svg viewBox="0 0 64 64" fill="none" aria-hidden="true" focusable="false">
-          <path d="M6 56h52" stroke="#8b1732" stroke-width="3" stroke-linecap="round"/>
-          <rect x="12" y="38" width="8" height="14" fill="#8b1732"/>
-          <rect x="26" y="30" width="8" height="22" fill="#8b1732"/>
-          <rect x="40" y="20" width="8" height="32" fill="#8b1732"/>
-          <path d="M12 26 L28 18 L40 12 L54 6" stroke="#8b1732" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M46 6h9v9" stroke="#8b1732" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
+        <span class="disc">
+          <!-- the design's growth mark is vector art in Canva; redrawn here in brand red -->
+          <svg viewBox="0 0 64 64" fill="none" aria-hidden="true" focusable="false">
+            <path d="M6 56h52" stroke="#e02e2e" stroke-width="3" stroke-linecap="round"/>
+            <rect x="12" y="38" width="8" height="14" fill="#e02e2e"/>
+            <rect x="26" y="30" width="8" height="22" fill="#e02e2e"/>
+            <rect x="40" y="20" width="8" height="32" fill="#e02e2e"/>
+            <path d="M12 26 L28 18 L40 12 L54 6" stroke="#e02e2e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M46 6h9v9" stroke="#e02e2e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
         <span class="label">6th Fastest<br>growing city in CA</span>
       </div>
       <div class="statTile">
-        <img src="_img/icons/airports.png" alt="" aria-hidden="true">
+        <span class="disc"><img src="_img/icons/airports.png" alt="" aria-hidden="true"></span>
         <span class="label">Located near 4<br>international airports</span>
       </div>
     </div>
 
-    <p class="beaNote">According to the Bureau of Economic Analysis, San Joaquin County has the 2nd highest concentration of transportation and logistics jobs in the nation. Manteca's close proximity to colleges and universities, major international and domestic air services, rail, and shipping ports delivers the strategic advantage growing businesses need.</p>
+    <p class="beaNote">According to the Bureau of Economic Analysis, San Joaquin County has the 2nd
+      highest concentration of transportation and logistics jobs in the nation. Manteca's close
+      proximity to colleges and universities, major international and domestic air services, rail,
+      and shipping ports delivers the strategic advantage growing businesses need.</p>
 
     <div class="featureRow">
       <div class="icon">
@@ -182,8 +268,9 @@
         </svg>
       </div>
       <div>
-        <h4>Manteca is in the heart of California.</h4>
-        <p>Located along HWY 120 between Interstate 5 and HWY 99. Situated approximately 75 miles east of San Francisco and 60 miles south of Sacramento.</p>
+        <h3>Manteca is in the heart of California.</h3>
+        <p>Located along HWY 120 between Interstate 5 and HWY 99. Situated approximately 75 miles
+           east of San Francisco and 60 miles south of Sacramento.</p>
       </div>
     </div>
 
@@ -198,13 +285,15 @@
       </div>
       <div>
         <!--
-          EDITOR NOTE: the draft left this heading as literal "xx College/Universities in xx
-          miles." Filled from a sourced count — San Joaquin Delta College (~14.5 mi),
-          University of the Pacific (~16 mi), CSU Stanislaus (~29 mi). Confirm this is the
-          set the client wants cited.
+          EDITOR NOTE: the design still reads "Located near xx College/Universities in xx miles."
+          Filled from a sourced count — San Joaquin Delta College (~14.5 mi), University of the
+          Pacific (~16 mi), CSU Stanislaus (~29 mi). Confirm this is the set the client wants cited.
         -->
-        <h4>Located near 3 Colleges/Universities within 30 miles.</h4>
-        <p>Employers are striking talent gold in San Joaquin County due to the proximity of area institutions for higher education. Regional colleges and universities are providing a pipeline of future workers through valuable learning and training opportunities for students while helping regional employers access a skilled and educated workforce.</p>
+        <h3>Located near 3 Colleges/Universities within 30 miles.</h3>
+        <p>Employers are striking talent gold in San Joaquin County due to the proximity of area
+           institutions for higher education. Regional colleges and universities are providing a
+           pipeline of future workers through valuable learning and training opportunities for
+           students while helping regional employers access a skilled and educated workforce.</p>
       </div>
     </div>
 
@@ -218,44 +307,63 @@
         </svg>
       </div>
       <div>
-        <h4>Gaining new residents with attractive affordable housing.</h4>
-        <p>Known as the "Family City," Manteca offers an abundant variety of more affordable housing choices than the Bay Area. We are a City experiencing fast growth with more than 11,000 entitled lots in various stages of processing.</p>
+        <h3>Gaining new residents with attractive housing options.</h3>
+        <p>Known as the &ldquo;Family City,&rdquo; Manteca offers an abundant variety of more
+           affordable housing choices than the Bay Area. We are a City experiencing fast growth with
+           more than 11,000 entitled lots in various stages of processing.</p>
       </div>
     </div>
+  </section>
 
-    <h2 class="sectionTitle center" style="margin-top:2.4em;">Join Our Current Corporations</h2>
-    <div id="logoWall">
-      <img src="_img/logos/bass-pro-shops.png" alt="Bass Pro Shops">
-      <img src="_img/logos/great-wolf-lodge.png" alt="Great Wolf Lodge">
-      <img src="_img/logos/unrivaled-sports.png" alt="Unrivaled Sports">
-      <img src="_img/logos/ford.png" alt="Ford">
-      <img src="_img/logos/living-spaces.png" alt="Living Spaces">
-      <img src="_img/logos/sutter-health.png" alt="Sutter Health">
+  <section id="corporations" class="section" aria-labelledby="corpHeading">
+    <div class="inner">
+      <h2 id="corpHeading" class="sectionTitle center">Join Our Current Corporations</h2>
+      <div id="logoWall">
+        <img src="_img/logos/bass-pro-shops.png" alt="Bass Pro Shops" loading="lazy">
+        <img src="_img/logos/great-wolf-lodge.png" alt="Great Wolf Lodge" loading="lazy">
+        <img src="_img/logos/unrivaled-sports.png" alt="Unrivaled Sports" loading="lazy">
+        <img src="_img/logos/ford.png" alt="Ford" loading="lazy">
+        <img src="_img/logos/living-spaces.png" alt="Living Spaces" loading="lazy">
+        <img src="_img/logos/sutter-health.png" alt="Sutter Health" loading="lazy">
+      </div>
+      <!--
+        EDITOR NOTE: Walmart is named in the design and belongs in this wall, but its logo is
+        vector art in the Canva file and could not be extracted. Add a licensed Walmart logo
+        to _img/logos/ and drop an <img> in above.
+
+        EDITOR NOTE: the design carries an open to-do beside this wall — "Add major employers:
+        Kaiser, Industries?, Delta College". Those three are not added here because the note is
+        a question to the client, not confirmed copy. Confirm and supply logos.
+      -->
     </div>
-    <!--
-      EDITOR NOTE: Walmart is named in the draft and belongs in this wall, but its logo is
-      vector art in the Canva file and could not be extracted as an image. Add a licensed
-      Walmart logo file to _img/logos/ and drop an <img> in above.
-
-      EDITOR NOTE: the draft also reserves space for 4 business testimonial videos here, all
-      four left empty. Cut until real testimonials are supplied.
-    -->
   </section>
 
   <section id="fez" aria-labelledby="fezHeading">
-    <div class="fezHero" style="background-image:url('_img/draft/fez-hero.jpg')" role="img" aria-label="The FEZ — Family Entertainment Zone, Manteca, CA"></div>
-    <div class="section">
-      <h2 id="fezHeading" class="sectionTitle">The FEZ</h2>
-      <p class="tagline">The Family Entertainment Zone (FEZ) is Manteca's visionary development project designed to create a premier destination for residents and visitors alike.</p>
+    <div class="fezHero">
+      <img src="_img/draft/fez-hero.jpg" alt="The FEZ — Family Entertainment Zone, Manteca, CA" loading="lazy" decoding="async">
+    </div>
 
-      <div class="mediaRow">
+    <div class="section">
+      <h2 id="fezHeading" class="sectionTitle center">The Family Entertainment Zone</h2>
+      <p class="tagline">The Family Entertainment Zone (FEZ) is Manteca's visionary development
+         project designed to create a premier destination for residents and visitors alike.</p>
+
+      <div class="splitRow">
         <div class="videoWrap">
-          <iframe src="https://www.youtube.com/embed/xxdtJeF1AtQ" title="The FEZ – Manteca's Family Entertainment Zone" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+          <iframe src="https://www.youtube-nocookie.com/embed/xxdtJeF1AtQ"
+            title="The FEZ — Manteca's Family Entertainment Zone"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen loading="lazy"></iframe>
         </div>
         <div>
-          <h3 class="subTitle" style="font-size:1.3rem;">A New Entertainment Paradigm</h3>
-          <p>FEZ Manteca represents a new approach to entertainment destinations, one that seamlessly blends retail, dining, and entertainment into a cohesive experience. Our concept focuses on creating a place where families can spend quality time together, where friends can gather for memorable experiences, and where the community can come together for events and celebrations.</p>
-          <p>By combining diverse attractions under one development, FEZ will create synergies that benefit all tenants and provide visitors with multiple reasons to visit again and again.</p>
+          <h3>A New Entertainment Paradigm</h3>
+          <p>FEZ Manteca represents a new approach to entertainment destinations, one that seamlessly
+             blends retail, dining, and entertainment into a cohesive experience. Our concept focuses
+             on creating a place where families can spend quality time together, where friends can
+             gather for memorable experiences, and where the community can come together for events
+             and celebrations.</p>
+          <p>By combining diverse attractions under one development, FEZ will create synergies that
+             benefit all tenants and provide visitors with multiple reasons to visit again and again.</p>
           <ul class="bullets">
             <li>Year-round destination appeal</li>
             <li>Multi-generational attractions</li>
@@ -266,9 +374,9 @@
     </div>
 
     <!--
-      EDITOR NOTE: FEZ acreage conflict — the draft says 120+ acres, the promo video said 150,
-      the legacy .org site said 1,040. Using the draft's 120+ throughout. Reconfirm with
-      Vanessa/Elia before this goes to print.
+      EDITOR NOTE: FEZ acreage conflict — the design says 120+ acres, the promo video says 150,
+      the legacy .org site said 1,040. Using the design's 120+ throughout. Reconfirm before print.
+      The design also prints "Entertianment Venues"; corrected here.
     -->
     <div class="fezBand">
       <div class="inner">
@@ -280,146 +388,218 @@
     </div>
 
     <div class="section">
-      <div class="mediaRow">
+      <div class="splitRow">
         <div>
-          <h3 class="subTitle" style="font-size:1.3rem;">A Comprehensive Entertainment Destination</h3>
-          <p>FEZ Manteca represents a unique opportunity to develop a mixed-use entertainment district that will serve as a regional draw for the Central Valley. Our vision combines world-class shopping, diverse dining options, family-friendly entertainment venues, state-of-the-art sports facilities, and vibrant live entertainment spaces.</p>
-          <p>Located strategically in Manteca, California, the FEZ will capitalize on the city's growing population and strategic position between major metropolitan areas, creating an unparalleled destination for both locals and tourists.</p>
+          <h3>A Comprehensive Entertainment Destination</h3>
+          <p>FEZ Manteca represents a unique opportunity to develop a mixed-use entertainment district
+             that will serve as a regional draw for the Central Valley. Our vision combines world-class
+             shopping, diverse dining options, family-friendly entertainment venues, state-of-the-art
+             sports facilities, and vibrant live entertainment spaces.</p>
+          <p>Located strategically in Manteca, California, the FEZ will capitalize on the city's growing
+             population and strategic position between major metropolitan areas, creating an unparalleled
+             destination for both locals and tourists.</p>
           <div class="investPoint">
-            <span class="dot" aria-hidden="true">&#9679;</span>
+            <span class="dot" aria-hidden="true"></span>
             <div>
-              <h5>Prime Location</h5>
+              <h4>Prime Location</h4>
               <p>Strategically positioned for maximum visibility and accessibility.</p>
             </div>
           </div>
         </div>
         <!--
-          EDITOR NOTE: "$100+ Economic Impact" in the draft is missing its unit — using $100M+
-          per the build brief's stated assumption. Confirm with the client.
-          The draft's metric box also repeated "120+ Acres of Development", already in the band
-          above; dropped so the same figure isn't printed twice.
+          EDITOR NOTE: "$100+ Economic Impact" in the design is missing its unit — rendered as
+          $100M+ per the build brief's stated assumption. Confirm with the client.
+          The design's metric card also repeats "120+ Acres of Development", already stated in
+          the band above; dropped so the same figure is not printed twice on one page.
         -->
         <div class="metricCards">
           <div><strong>1M+</strong><span>Annual Visitors Expected</span></div>
           <div><strong>500+</strong><span>Jobs Created</span></div>
           <div><strong>$100M+</strong><span>Economic Impact</span></div>
-          <div><strong>120+</strong><span>Acres of Development</span></div>
         </div>
       </div>
     </div>
 
     <div class="section section--tint">
       <div class="inner">
-        <h3 class="subTitle center">Project Gallery</h3>
-        <p class="noteLine">Explore conceptual renderings of the FEZ Manteca development and get a glimpse of what this exciting project will bring to the community.</p>
-        <!--
-          EDITOR NOTE: the draft's six gallery images are concept/stock renderings embedded as a
-          single flattened graphic, too low-resolution to reuse and not confirmed as real project
-          assets. Rendered as labeled placeholders rather than passing stock art off as the real
-          design. Drop real renderings in and swap these cards for <img> when available.
-        -->
-        <div class="galleryGrid">
-          <div class="galleryCard"><h5>Premium Shopping Experience</h5><span>Conceptual — rendering pending</span></div>
-          <div class="galleryCard"><h5>Culinary Destination</h5><span>Conceptual — rendering pending</span></div>
-          <div class="galleryCard"><h5>Family Entertainment Center</h5><span>Conceptual — rendering pending</span></div>
-          <div class="galleryCard"><h5>Sports Complex</h5><span>Conceptual — rendering pending</span></div>
-          <div class="galleryCard"><h5>Live Entertainment Venue</h5><span>Conceptual — rendering pending</span></div>
-          <div class="galleryCard"><h5>Central Plaza</h5><span>Conceptual — rendering pending</span></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="section">
-      <h3 class="subTitle center">Investment Opportunity</h3>
-      <!--
-        EDITOR NOTE: the draft had two back-to-back sentences making the same claim
-        ("unique opportunity ... significant growth potential" twice). Merged into one.
-      -->
-      <p class="noteLine" style="font-style:normal;font-size:1rem;margin-bottom:2.4em;">FEZ Manteca represents a unique opportunity for developers and investors to be part of a transformative project with significant growth potential. The Family Entertainment Zone is positioned to become a premier destination in the Central Valley, with strong fundamentals for investors getting in early.</p>
-      <h4 class="center" style="font-size:1.15rem;">Why invest in the FEZ in Manteca?</h4>
-      <div class="mediaRow" style="grid-template-columns:1fr 1fr;">
-        <div class="investPoint">
-          <span class="dot" aria-hidden="true">&#9679;</span>
-          <div>
-            <h5>Strategic Location</h5>
-            <p>Located in one of California's fastest-growing regions with excellent accessibility and visibility.</p>
+        <h3 class="sectionTitle center">Investment Opportunity</h3>
+        <p class="tagline">FEZ Manteca represents a unique opportunity for developers and investors
+           to be part of a transformative project with significant growth potential.</p>
+        <h4 class="center whyInvest">Why invest in the FEZ in Manteca?</h4>
+        <div class="splitRow splitRow--even">
+          <div class="investPoint">
+            <span class="dot" aria-hidden="true"></span>
+            <div>
+              <h4>Strategic Location</h4>
+              <p>Located in one of California's fastest-growing regions with excellent accessibility
+                 and visibility.</p>
+            </div>
+          </div>
+          <div class="investPoint">
+            <span class="dot" aria-hidden="true"></span>
+            <div>
+              <h4>Strong Market Demand</h4>
+              <p>Addressing an underserved market with significant pent-up demand for quality
+                 entertainment options.</p>
+            </div>
           </div>
         </div>
-        <div class="investPoint">
-          <span class="dot" aria-hidden="true">&#10003;</span>
-          <div>
-            <h5>Strong Market Demand</h5>
-            <p>Addressing an underserved market with significant pent-up demand for quality entertainment options.</p>
-          </div>
-        </div>
+        <p class="center ctaRow">
+          <a class="btn btn--solid" href="mailto:econdev@manteca.gov?subject=makeitmanteca.com:%20FEZ%20Development%20Opportunity">Explore Development Opportunities</a>
+          <a class="btn" href="https://thefezmanteca.com/">Learn More About The FEZ</a>
+        </p>
       </div>
-      <p class="center" style="margin-top:1.5em;">
-        <a class="btn btn--solid" href="mailto:econdev@manteca.gov?subject=makeitmanteca.com:%20FEZ%20Development%20Opportunity">Explore Development Opportunities</a>
-        <a class="btn" href="https://thefezmanteca.com/" style="margin-left:10px;">Learn More About The FEZ</a>
-      </p>
     </div>
   </section>
 
-  <section id="resources" class="section section--tint" aria-labelledby="resourcesHeading">
-    <div class="inner">
-      <h2 id="resourcesHeading" class="sectionTitle center">Resources</h2>
-      <!--
-        EDITOR NOTE: the draft names "Resources" in the nav without specifying contents. Scoped
-        to the City's incentive programs per the build brief's best guess. Guideline PDFs are
-        served from this repo; confirm whether applications should route to makeitmanteca.org.
-      -->
-      <p class="noteLine">These programs are informational — an inquiry is not an application. Participation is highly selective and by invitation. Connect with our team to find out what's right for your project.</p>
-      <div class="programGrid">
-        <div class="programCard">
-          <h4>Startup Manteca Incentive Program</h4>
-          <p>Technical and financial assistance for launching and scaling startups, and for co-working or incubator facilities that support them, across most tech verticals — AgTech, AI/ML, BioTech, Blockchain/Web3, CleanTech, and more.</p>
-          <div class="linkRow">
-            <a class="btn btn--solid" href="mailto:econdev@manteca.gov?subject=makeitmanteca.com:%20Startup%20Manteca%20Inquiry">Inquire</a>
-            <a href="_pdf/startup-manteca-program-guidelines.pdf">View Guidelines (PDF)</a>
-          </div>
-        </div>
-        <div class="programCard">
-          <h4>BReW Program</h4>
-          <p>Financial support for target industry businesses covering the development, improvement, or expansion of breweries, restaurants, and wineries in Manteca.</p>
-          <div class="linkRow">
-            <a class="btn btn--solid" href="mailto:econdev@manteca.gov?subject=makeitmanteca.com:%20BReW%20Program%20Inquiry">Inquire</a>
-            <a href="_pdf/brew-guidelines.pdf">View Guidelines (PDF)</a>
-          </div>
-        </div>
-        <div class="programCard">
-          <h4>FIXD Program</h4>
-          <p>The Façade Improvement through Exceptional Design program provides grant funding and professional design services for exterior building improvements — paint, lighting, awnings, signage, and more. Highly selective, invitation-only.</p>
-          <div class="linkRow">
-            <a class="btn btn--solid" href="mailto:econdev@manteca.gov?subject=makeitmanteca.com:%20FIXD%20Program%20Inquiry">Inquire</a>
-            <a href="_pdf/fixd-guidelines.pdf">View Guidelines (PDF)</a>
-          </div>
-        </div>
-        <div class="programCard">
-          <h4>Retail &amp; Hospitality</h4>
-          <p>Targeted tax rebate incentives for businesses and projects that generate significant new sales and occupancy taxes, and raise the bar on lifestyle amenity quality and quantity.</p>
-          <div class="linkRow">
-            <a class="btn btn--solid" href="mailto:econdev@manteca.gov?subject=makeitmanteca.com:%20Retail%20%26%20Hospitality%20Inquiry">Inquire</a>
-          </div>
+  <section id="resources" class="section" aria-labelledby="resourcesHeading">
+    <h2 id="resourcesHeading" class="sectionTitle center">Resources</h2>
+
+    <h3 class="subTitle">How to Start a Business</h3>
+    <div class="splitRow splitRow--panels">
+      <div class="linkPanel">
+        <h4>City Business Resources</h4>
+        <ul class="linkList">
+          <li><a href="https://www.manteca.gov/departments/development-services/economic-development">Economic Development</a>: Visit Manteca's Economic Development page.</li>
+          <li><a href="https://permits.manteca.city/">Business Portal</a>: See which permits you need for your business.</li>
+          <li><a href="https://www.manteca.gov/departments/finance-department/business-licenses">Business Licenses</a>: Get information on new licenses or renewals.</li>
+          <li><a href="https://www.manteca.gov/departments/finance-department/business-licenses/apply-for-a-business-license">Apply for a License</a>: Find out how to apply and get the next steps.</li>
+          <li><a href="https://www.manteca.gov/departments/finance-department/business-licenses/frequently-asked-questions">Business FAQ</a>: Get answers to frequently asked questions.</li>
+        </ul>
+      </div>
+      <div class="linkPanel">
+        <h4>External Resources</h4>
+        <ul class="linkList">
+          <li><a href="https://www.loopnet.com/california/manteca-commercial-real-estate/">Opportunity Sites</a></li>
+          <li><a href="http://decisiondata.greatersiliconvalley.com/demographics.html">Demographics</a></li>
+          <li><a href="https://www.csustan.edu/sjvbf">San Joaquin Valley Business Forecast</a></li>
+          <li><a href="https://www.labormarketinfo.edd.ca.gov/geography/lmi-by-county.html">EDD Labor Market Data</a></li>
+          <li><a href="https://data.census.gov/cedsci/all?q=manteca%20ca">Manteca Census Data</a></li>
+          <li><a href="https://www.pacificcbpr.org/2018-nsjv-index/">2018 North San Joaquin Valley Index</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 class="subTitle spaced">Small Business Resources</h3>
+    <div class="splitRow splitRow--panels">
+      <div class="linkPanel">
+        <h4>Financial Assistance</h4>
+        <ul class="linkList">
+          <li><a href="https://www.sba.gov/funding-programs/disaster-assistance">Emergency Loan from SBA</a>: The Small Business Administration has a list of resources providing financial assistance to businesses of all sizes, non-profit organizations, homeowners and renters following disasters.</li>
+          <li><strong>Small Business Assistance Grants</strong>: The City of Manteca periodically provides grants to local small businesses for improvements.</li>
+        </ul>
+      </div>
+      <div class="linkPanel">
+        <h4>Business Assistance</h4>
+        <ul class="linkList">
+          <li><a href="https://sanjoaquinsbdc.org/">San Joaquin SBDC</a>: The San Joaquin Small Business Development Center offers startup assistance, advising, funding, training, and industry information for small businesses in the county.</li>
+          <li><a href="https://mantecachamber.net/">Manteca Chamber of Commerce</a>: The Chamber's role is to protect, improve, and promote local businesses. They provide businesses with friendships, professional and social development, and networking opportunities.</li>
+          <li><a href="https://www.mantecausd.net/metc">Manteca Education and Training Center (METC)</a>: The METC offers a variety of skills training and career path development courses. Teaching both soft skills and technical skills, they offer ways for business owners to upskill their workforces.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!--
+      EDITOR NOTE: the design's Resources page lists the links above and does not mention the
+      City's incentive programs. Those programs and their guideline PDFs were already published
+      on this site and are live content, so they are kept below rather than dropped. Say the
+      word if the client wants this section removed to match the design exactly.
+      The SBA / SBDC / Chamber / METC destinations above are the organisations' current public
+      URLs — the design linked several of them through manteca.gov's external-link interstitial.
+      Worth a click-through check before launch.
+    -->
+    <h3 class="subTitle spaced">City Incentive Programs</h3>
+    <p class="noteLine">These programs are informational &mdash; an inquiry is not an application.
+      Participation is highly selective and by invitation. Connect with our team to find out what's
+      right for your project.</p>
+    <div class="programGrid">
+      <div class="programCard">
+        <h4>Startup Manteca Incentive Program</h4>
+        <p>Technical and financial assistance for launching and scaling startups, and for co-working
+           or incubator facilities that support them, across most tech verticals &mdash; AgTech,
+           AI/ML, BioTech, Blockchain/Web3, CleanTech, and more.</p>
+        <div class="linkRow">
+          <a class="btn btn--solid" href="mailto:econdev@manteca.gov?subject=makeitmanteca.com:%20Startup%20Manteca%20Inquiry">Inquire</a>
+          <a href="_pdf/startup-manteca-program-guidelines.pdf">View Guidelines (PDF)</a>
         </div>
       </div>
-      <p class="resourceLine">Site-selection consultants: <a href="_pdf/site-selectors-deck.pdf">download our Site Selector Overview (PDF)</a>.</p>
+      <div class="programCard">
+        <h4>BReW Program</h4>
+        <p>Financial support for target industry businesses covering the development, improvement,
+           or expansion of breweries, restaurants, and wineries in Manteca.</p>
+        <div class="linkRow">
+          <a class="btn btn--solid" href="mailto:econdev@manteca.gov?subject=makeitmanteca.com:%20BReW%20Program%20Inquiry">Inquire</a>
+          <a href="_pdf/brew-guidelines.pdf">View Guidelines (PDF)</a>
+        </div>
+      </div>
+      <div class="programCard">
+        <h4>FIXD Program</h4>
+        <p>The Fa&ccedil;ade Improvement through Exceptional Design program provides grant funding and
+           professional design services for exterior building improvements &mdash; paint, lighting,
+           awnings, signage, and more. Highly selective, invitation-only.</p>
+        <div class="linkRow">
+          <a class="btn btn--solid" href="mailto:econdev@manteca.gov?subject=makeitmanteca.com:%20FIXD%20Program%20Inquiry">Inquire</a>
+          <a href="_pdf/fixd-guidelines.pdf">View Guidelines (PDF)</a>
+        </div>
+      </div>
+      <div class="programCard">
+        <h4>Retail &amp; Hospitality</h4>
+        <p>Targeted tax rebate incentives for businesses and projects that generate significant new
+           sales and occupancy taxes, and raise the bar on lifestyle amenity quality and quantity.</p>
+        <div class="linkRow">
+          <a class="btn btn--solid" href="mailto:econdev@manteca.gov?subject=makeitmanteca.com:%20Retail%20%26%20Hospitality%20Inquiry">Inquire</a>
+        </div>
+      </div>
+    </div>
+    <p class="resourceLine">Site-selection consultants:
+      <a href="_pdf/site-selectors-deck.pdf">download our Site Selector Overview (PDF)</a>.</p>
+  </section>
+
+  <section id="team" class="section section--tint" aria-labelledby="teamHeading">
+    <div class="inner">
+      <h2 id="teamHeading" class="sectionTitle center">Meet the Team</h2>
+      <div class="teamGrid">
+        <div class="teamCard">
+          <img src="_img/team/vanessa-carrera.jpg" alt="Vanessa Carrera" loading="lazy">
+          <h3>Vanessa Carrera</h3>
+          <p>Deputy Director of<br>Economic Development</p>
+        </div>
+        <!--
+          EDITOR NOTE: Toni Lundgren is new in this revision of the design and no headshot was
+          supplied in a form that could be extracted. Rendered as an initials avatar; drop a
+          photo at _img/team/toni-lundgren.jpg and swap in an <img> to match the other two.
+        -->
+        <div class="teamCard">
+          <span class="avatarInitials" aria-hidden="true">TL</span>
+          <h3>Toni Lundgren</h3>
+          <p>City Manager</p>
+        </div>
+        <div class="teamCard">
+          <img src="_img/team/joseph-viorge-koide.jpg" alt="Joseph Viorge-Koide" loading="lazy">
+          <h3>Joseph Viorge-Koide</h3>
+          <p>Senior Economic<br>Development Analyst</p>
+        </div>
+      </div>
     </div>
   </section>
 
   <!--
     No contact form by design. This is a static site with no backend, so a form would either
-    post nowhere or depend on a third-party endpoint / an individual's Google account that
-    nobody owns long-term — and a form that quietly loses inquiries is worse than no form.
-    Direct email and phone also suit the audience here (brokers, developers, site selectors).
-    If a form is ever wanted, the endpoint wiring and a ready-to-deploy Google Apps Script
-    handler are in this repo's history — see the commits around _docs/contact-form-setup.md.
+    post nowhere or depend on a third-party endpoint that nobody owns long-term — and a form
+    that quietly loses inquiries is worse than no form. Direct email and phone also suit the
+    audience here (brokers, developers, site selectors).
+
+    EDITOR NOTE: the design's Contact block is an empty template — "Email:", "Mailing Address:",
+    "Phone:" and "+Social Media Links" with no values filled in. The real details already
+    published on this site are kept below.
   -->
   <section id="contact" class="section" aria-labelledby="contactHeading">
     <h2 id="contactHeading" class="sectionTitle center">Contact Us</h2>
-    <p class="contactLead">Tell us about your project and we'll get you the sites, numbers, and approvals path you need. Every inquiry reaches our team directly.</p>
+    <p class="contactLead">Tell us about your project and we'll get you the sites, numbers, and
+       approvals path you need. Every inquiry reaches our team directly.</p>
 
-    <p class="center" style="margin-bottom:3.2em;">
-      <a class="btn btn--light" href="mailto:econdev@manteca.gov?subject=makeitmanteca.com%20inquiry">Email econdev@manteca.gov</a>
+    <p class="center ctaRow">
+      <a class="btn btn--solid" href="mailto:econdev@manteca.gov?subject=makeitmanteca.com%20inquiry">Email econdev@manteca.gov</a>
     </p>
 
     <div class="contactCols">
@@ -440,7 +620,7 @@
       </div>
       <div>
         <span class="label">Connect</span>
-        <a href="https://www.linkedin.com/company/manteca-office-of-economic-development">LinkedIn — Manteca Office of<br>Economic Development</a>
+        <a href="https://www.linkedin.com/company/manteca-office-of-economic-development">LinkedIn &mdash; Manteca Office<br>of Economic Development</a>
       </div>
     </div>
   </section>
@@ -449,9 +629,11 @@
 
 <footer id="siteFooter">
   <div class="inner">
-    <a class="logo" href="#top" aria-label="Make It Manteca — home"><img src="_img/mim-logo.png" alt="Make It Manteca"></a>
-    <address>1001 W. Center Street, Manteca, CA 95337<br><a href="mailto:econdev@manteca.gov" style="color:inherit">econdev@manteca.gov</a></address>
-    <div class="socialIconsRow"><a href="https://www.linkedin.com/company/manteca-office-of-economic-development"><img src="_img/linkedin.svg" alt="LinkedIn"></a></div>
+    <a class="logo" href="#top" aria-label="Make It Manteca — home"><img src="_img/mim-logo-white.png" alt="Make It Manteca"></a>
+    <address>1001 W. Center Street, Manteca, CA 95337<br><a href="mailto:econdev@manteca.gov">econdev@manteca.gov</a></address>
+    <div class="socialIconsRow">
+      <a href="https://www.linkedin.com/company/manteca-office-of-economic-development" aria-label="LinkedIn"><img src="_img/linkedin.svg" alt="LinkedIn"></a>
+    </div>
   </div>
   <p class="bottomLine">&copy; 2026 City of Manteca Office of Economic Development</p>
 </footer>
@@ -470,8 +652,15 @@
       toggle.setAttribute('aria-expanded', 'false');
     });
   });
-})();
 
+  // Shrink the header once the hero has scrolled past.
+  var header = document.getElementById('siteHeader');
+  var onScroll = function () {
+    header.classList.toggle('is-stuck', window.scrollY > 40);
+  };
+  window.addEventListener('scroll', onScroll, { passive: true });
+  onScroll();
+})();
 </script>
 </body>
 </html>
