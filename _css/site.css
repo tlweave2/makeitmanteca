@@ -31,10 +31,16 @@
 }
 
 * { box-sizing: border-box; }
-html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 88px;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
 
 body {
   margin: 0;
+  overflow-wrap: break-word;
   font-family: var(--font);
   color: var(--ink-2);
   background: var(--paper);
@@ -99,6 +105,18 @@ h4 { font-size: 1.05rem; }
 }
 .section--tint { max-width: none; background: var(--paper-2); }
 .inner { max-width: var(--max); margin: 0 auto; }
+
+/* Grid and flex children default to min-width:auto, which refuses to shrink below the
+   longest word. Every track here is free to narrow instead of widening the page. */
+.splitRow > *,
+.featureRow > *,
+.videoGrid > *,
+.programGrid > *,
+.metricCards > *,
+.statRow > *,
+.contactCols > *,
+.fezBand .inner > *,
+#siteFooter .inner > * { min-width: 0; }
 
 /* ---------- header ---------------------------------------------------- */
 
