@@ -253,14 +253,6 @@ h4 { font-size: 1.05rem; }
 .videoWrap iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
 .videoWrap--wide { max-width: 860px; margin: 2.6em auto 0; }
 
-.videoWrap--pending {
-  display: flex; align-items: center; justify-content: center;
-  background: repeating-linear-gradient(45deg, #1a1c22 0 12px, #15171c 12px 24px);
-}
-.videoWrap--pending span {
-  color: rgba(255, 255, 255, 0.62);
-  font-size: 0.9rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase;
-}
 
 #momentum { background: linear-gradient(180deg, var(--momentum-1) 0%, var(--momentum-2) 62%); }
 .videoGrid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px 34px; }
