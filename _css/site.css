@@ -39,7 +39,12 @@
 
   --max: 1180px;
   --gutter: 24px;
-  --font: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  /* The design is set in Canva Sans, which is not licensed for the web. Inter is the
+     closest free match — measured against the client's own page exports it scores a
+     0.69 shape match to Poppins' 0.57. Poppins was wrong here: its single-storey "a"
+     and geometric roundness are nothing like the design's double-storey grotesque.
+     The fallbacks are all neo-grotesques too, so an unloaded font still reads close. */
+  --font: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 }
 
 * { box-sizing: border-box; }

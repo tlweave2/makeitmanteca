@@ -86,7 +86,7 @@ SJ = (37.34,-121.89)   # two-line label, placed in the ocean to the south-west
 
 o = []; a = o.append
 a(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W:.0f} {H:.0f}" width="{W:.0f}" height="{H:.0f}" '
-  f'role="img" aria-labelledby="mapTitle mapDesc" font-family="Poppins, Segoe UI, Helvetica, sans-serif">')
+  f'role="img" aria-labelledby="mapTitle mapDesc" font-family="Inter, Segoe UI, Helvetica, sans-serif">')
 a('<title id="mapTitle">Manteca in the heart of California</title>')
 a('<desc id="mapDesc">Map of Northern and Central California showing Manteca on Highway 120 between '
   'Interstate 5 and Highway 99. Driving distances: Port of Oakland 76 miles, San Jose and Silicon Valley '
