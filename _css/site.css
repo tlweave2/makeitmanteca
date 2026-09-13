@@ -263,24 +263,29 @@ h4 { font-size: 1.05rem; }
 
 /* ---------- community stats ------------------------------------------- */
 
+/* Three across over two rows, as the design lays it out. A six-column track lets the
+   trailing two tiles centre themselves under the first row. The wider column is what
+   makes the design's large, unhurried label type possible. */
 .statRow {
-  display: grid; grid-template-columns: repeat(5, 1fr); gap: 26px;
-  margin: 0 0 3.2em; text-align: center;
+  display: grid; grid-template-columns: repeat(6, 1fr); gap: 54px 30px;
+  margin: 0 0 3.6em; text-align: center;
 }
-.statTile { display: flex; flex-direction: column; align-items: center; }
+.statTile { grid-column: span 2; display: flex; flex-direction: column; align-items: center; }
+.statTile:nth-child(4) { grid-column: 2 / span 2; }
+.statTile:nth-child(5) { grid-column: 4 / span 2; }
 .statTile .disc {
-  width: 158px; height: 158px; max-width: 100%;
+  width: 258px; aspect-ratio: 1; max-width: 100%;
   border-radius: 50%;
   background: var(--paper-2);
-  margin-bottom: 16px;
+  margin-bottom: 30px;
   overflow: hidden;
 }
 .statTile .disc img { width: 100%; height: 100%; object-fit: cover; }
 .statTile .label {
-  font-size: 0.95rem; font-weight: 600; color: var(--ink); line-height: 1.35;
+  font-size: 1.5rem; font-weight: 600; color: var(--ink); line-height: 1.28;
 }
 .statTile .figure {
-  font-size: 1.5rem; font-weight: 800; color: var(--navy); line-height: 1.2; margin-top: 2px;
+  font-size: 1.7rem; font-weight: 700; color: var(--navy); line-height: 1.25; margin-top: 2px;
 }
 
 .beaNote {
@@ -460,8 +465,10 @@ h4 { font-size: 1.05rem; }
   .section { padding: 60px var(--gutter); }
   .splitRow, .splitRow--even { grid-template-columns: 1fr; gap: 34px; }
   .proseCols { columns: 1; }
-  .statRow { grid-template-columns: repeat(3, 1fr); gap: 30px 20px; }
-  .statTile .disc { width: 140px; height: 140px; }
+  .statRow { gap: 44px 24px; }
+  .statTile .disc { width: 210px; margin-bottom: 24px; }
+  .statTile .label { font-size: 1.28rem; }
+  .statTile .figure { font-size: 1.45rem; }
   .videoGrid { gap: 26px; }
   #logoWall { gap: 28px 32px; }
   .metricCards { grid-template-columns: repeat(3, 1fr); }
@@ -501,8 +508,14 @@ h4 { font-size: 1.05rem; }
   :root { --gutter: 18px; }
   html { scroll-padding-top: 72px; }
   .section { padding: 48px var(--gutter); }
-  .statRow { grid-template-columns: repeat(2, 1fr); }
-  .statTile .disc { width: 124px; height: 124px; }
+  /* two across on a phone: tiles flow in pairs and only the lone fifth is centred.
+     nth-child(4) has to be reset or it keeps the desktop row's explicit placement. */
+  .statRow { grid-template-columns: repeat(4, 1fr); gap: 34px 18px; }
+  .statTile, .statTile:nth-child(4) { grid-column: span 2; }
+  .statTile:nth-child(5) { grid-column: 2 / span 2; }
+  .statTile .disc { width: 150px; margin-bottom: 18px; }
+  .statTile .label { font-size: 1.02rem; }
+  .statTile .figure { font-size: 1.16rem; }
   #logoWall { grid-template-columns: repeat(2, 1fr); }
   #logoWall img { max-height: 62px; }
   .metricCards { grid-template-columns: 1fr; }
