@@ -71,11 +71,14 @@
       <div class="heroLogo">
         <img src="_img/mim-logo.png" alt="Make It Manteca">
       </div>
+      <!--
+        The design's hero band: five photographs clipped to slanted panels. Taken from the
+        client's page export as one image because the slant, the overlaps and the widths of
+        the white dividers are all part of the artwork - rebuilding it from five separate
+        crops reproduced the photos but not the geometry.
+      -->
       <div class="heroStrip" aria-hidden="true">
-        <img src="_img/4.jpg" alt="" loading="eager" decoding="async">
-        <img src="_img/9.jpg" alt="" loading="eager" decoding="async">
-        <img src="_img/1.jpg" alt="" loading="eager" decoding="async">
-        <img src="_img/7.jpg" alt="" loading="eager" decoding="async">
+        <img src="_img/design/hero-strip.jpg" alt="" width="1042" height="303" loading="eager" decoding="async">
       </div>
     </div>
 
@@ -96,12 +99,13 @@
     </div>
 
     <div class="photoBand" aria-hidden="true">
-      <img src="_img/3.jpg" alt="" loading="lazy" decoding="async">
-      <img src="_img/1.jpg" alt="" loading="lazy" decoding="async">
-      <img src="_img/4.jpg" alt="" loading="lazy" decoding="async">
-      <img src="_img/11.jpg" alt="" loading="lazy" decoding="async">
-      <img src="_img/6.jpg" alt="" loading="lazy" decoding="async">
-      <img src="_img/9.jpg" alt="" loading="lazy" decoding="async">
+      <img src="_img/design/band-1-ballpark.jpg" alt="" loading="lazy" decoding="async">
+      <img src="_img/design/band-2-something-big.jpg" alt="" loading="lazy" decoding="async">
+      <img src="_img/design/band-3-mother-daughter.jpg" alt="" loading="lazy" decoding="async">
+      <img src="_img/design/band-4-loma-coming-soon.jpg" alt="" loading="lazy" decoding="async">
+      <img src="_img/design/band-5-apartments-firepit.jpg" alt="" loading="lazy" decoding="async">
+      <img src="_img/design/band-6-family-park.jpg" alt="" loading="lazy" decoding="async">
+      <img src="_img/design/band-7-retail-center.jpg" alt="" loading="lazy" decoding="async">
     </div>
   </section>
 
@@ -119,24 +123,23 @@
       </div>
       <figure class="mapFigure">
         <!--
-          The design's locator map is flattened artwork in the Canva file and could not be
-          extracted, so it is redrawn as SVG in _img/manteca-location-map.svg. State outlines
-          come from public simplified US-state geometry; every marker sits at its true lat/lon
-          and every distance is the one printed in the design. Regenerate it with
-          `python3 _tools/gen-location-map.py` if the callouts change.
+          The locator map from the design itself. It is raster art, so it is only as sharp as
+          the client's 1366px-wide page export - fine at normal sizes, a little soft on a
+          high-DPI screen. A vector redraw of the same map lives at
+          _img/manteca-location-map.svg (regenerate with `python3 _tools/gen-location-map.py`)
+          if a sharper version is ever wanted in its place.
         -->
-        <img src="_img/manteca-location-map.svg" width="520" height="661"
+        <img src="_img/design/location-map.png" width="717" height="312"
              alt="Map of Northern and Central California: Manteca sits on Highway 120 between Interstate 5 and Highway 99 — 75 miles from San Jose and Silicon Valley, 76 from the Port of Oakland, 59 from Lake Tahoe, 111 from Fresno, 188 from Reno, 221 from Redding and 330 from Los Angeles, with the SMF, SFO, OAK, SJC and SCK airports nearby."
              loading="lazy" decoding="async">
       </figure>
     </div>
 
-    <div class="collage" aria-hidden="true">
-      <img src="_img/2.jpg" alt="" loading="lazy" decoding="async">
-      <img src="_img/10.jpg" alt="" loading="lazy" decoding="async">
-      <img src="_img/5.jpg" alt="" loading="lazy" decoding="async">
-      <img src="_img/8.jpg" alt="" loading="lazy" decoding="async">
-    </div>
+    <!--
+      Design page 1 places a slanted photo collage here. Page 2 - the hero built on this
+      page - carries those same five photographs in the hero band instead and leaves this
+      section as text and the map, so there is no collage here.
+    -->
 
     <div class="proseCols">
       <p>Manteca residents are looking for more places to shop, dine, gather, play, and spend time.
@@ -209,45 +212,33 @@
     <h2 id="communityHeading" class="sectionTitle center">Our Community</h2>
 
     <!--
-      EDITOR NOTE: the design shows six circular tiles, but two of them print the same stat
-      ("Located near 4 international airports") — a copy/paste duplicate. The five distinct
-      stats are shown here.
-
-      EDITOR NOTE: the design fills each circle with a photograph. Those photos are flattened
-      into the Canva page and could not be extracted, so the circles use the brand icon art
-      pulled from the earlier draft. Swap in real photography when it is supplied.
+      EDITOR NOTE: the design shows six circular photographs, but the fifth and sixth print
+      the same stat — "Located near 4 international airports" appears twice. The five
+      distinct stats are shown here, each with its photograph from the design. The sixth
+      photograph (the Manteca water tower) is extracted and waiting at
+      _img/design/community-6-water-tower.jpg for whatever that tile was meant to say.
     -->
     <div class="statRow">
       <div class="statTile">
-        <span class="disc"><img src="_img/icons/population.png" alt="" aria-hidden="true"></span>
+        <span class="disc"><img src="_img/design/community-1-population.jpg" alt="" aria-hidden="true" loading="lazy"></span>
         <span class="label">Population</span>
         <span class="figure">98,000</span>
       </div>
       <div class="statTile">
-        <span class="disc"><img src="_img/icons/parks.png" alt="" aria-hidden="true"></span>
+        <span class="disc"><img src="_img/design/community-2-park-acres.jpg" alt="" aria-hidden="true" loading="lazy"></span>
         <span class="label">527 Active<br>Park Acres</span>
       </div>
       <div class="statTile">
-        <span class="disc"><img src="_img/icons/degree.png" alt="" aria-hidden="true"></span>
+        <span class="disc"><img src="_img/design/community-3-degree-completion.jpg" alt="" aria-hidden="true" loading="lazy"></span>
         <span class="label">Degree Completion</span>
         <span class="figure">30.9%</span>
       </div>
       <div class="statTile">
-        <span class="disc">
-          <!-- the design's growth mark is vector art in Canva; redrawn here in brand red -->
-          <svg viewBox="0 0 64 64" fill="none" aria-hidden="true" focusable="false">
-            <path d="M6 56h52" stroke="#e02e2e" stroke-width="3" stroke-linecap="round"/>
-            <rect x="12" y="38" width="8" height="14" fill="#e02e2e"/>
-            <rect x="26" y="30" width="8" height="22" fill="#e02e2e"/>
-            <rect x="40" y="20" width="8" height="32" fill="#e02e2e"/>
-            <path d="M12 26 L28 18 L40 12 L54 6" stroke="#e02e2e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-            <path d="M46 6h9v9" stroke="#e02e2e" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </span>
+        <span class="disc"><img src="_img/design/community-4-fastest-growing.jpg" alt="" aria-hidden="true" loading="lazy"></span>
         <span class="label">6th Fastest<br>growing city in CA</span>
       </div>
       <div class="statTile">
-        <span class="disc"><img src="_img/icons/airports.png" alt="" aria-hidden="true"></span>
+        <span class="disc"><img src="_img/design/community-5-development.jpg" alt="" aria-hidden="true" loading="lazy"></span>
         <span class="label">Located near 4<br>international airports</span>
       </div>
     </div>
@@ -324,14 +315,15 @@
         <img src="_img/logos/bass-pro-shops.png" alt="Bass Pro Shops" loading="lazy">
         <img src="_img/logos/great-wolf-lodge.png" alt="Great Wolf Lodge" loading="lazy">
         <img src="_img/logos/unrivaled-sports.png" alt="Unrivaled Sports" loading="lazy">
+        <img src="_img/design/walmart.png" alt="Walmart" loading="lazy">
         <img src="_img/logos/ford.png" alt="Ford" loading="lazy">
         <img src="_img/logos/living-spaces.png" alt="Living Spaces" loading="lazy">
         <img src="_img/logos/sutter-health.png" alt="Sutter Health" loading="lazy">
       </div>
       <!--
-        EDITOR NOTE: Walmart is named in the design and belongs in this wall, but its logo is
-        vector art in the Canva file and could not be extracted. Add a licensed Walmart logo
-        to _img/logos/ and drop an <img> in above.
+        EDITOR NOTE: the Walmart mark here is lifted from the client's page export, so it is
+        low-resolution next to the other logos. Replace it with a licensed Walmart asset
+        before launch.
 
         EDITOR NOTE: the design carries an open to-do beside this wall — "Add major employers:
         Kaiser, Industries?, Delta College". Those three are not added here because the note is
